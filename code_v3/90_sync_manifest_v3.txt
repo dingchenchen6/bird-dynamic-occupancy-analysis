@@ -1,0 +1,12 @@
+code_v3
+results_v2
+data/china_boundary
+data/中国shp
+data/derived_v2/china_grid_100km_v2.rds
+data/derived_v2/combined_events_merged_dedup_2000_2025.rds
+data/derived_v2/grid_environment_dynamic_occupancy.rds
+data/derived_v2/species_visit_2000_2024.rds
+data/derived_v2/visit_effort_2000_2024.rds
+data/external/cru_ts
+data/external/clcd
+data/external/hfi
