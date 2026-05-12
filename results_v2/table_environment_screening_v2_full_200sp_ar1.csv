@@ -1,0 +1,39 @@
+step,variable,reason,scope
+correlation,bio8,|spearman r|>0.70,occupancy
+correlation,bio16,|spearman r|>0.70,occupancy
+correlation,bio6,|spearman r|>0.70,occupancy
+correlation,texture_entropy,|spearman r|>0.70,occupancy
+correlation,bio9,|spearman r|>0.70,occupancy
+correlation,bio2,|spearman r|>0.70,occupancy
+correlation,bio5,|spearman r|>0.70,occupancy
+correlation,bio10,|spearman r|>0.70,occupancy
+correlation,bio3,|spearman r|>0.70,occupancy
+correlation,human_modified_fraction,|spearman r|>0.70,occupancy
+correlation,landcover_built,|spearman r|>0.70,occupancy
+correlation,bio1,|spearman r|>0.70,occupancy
+correlation,bio18,|spearman r|>0.70,occupancy
+correlation,bio15,|spearman r|>0.70,occupancy
+correlation,texture_shannon,|spearman r|>0.70,occupancy
+correlation,hfi_sd,|spearman r|>0.70,occupancy
+correlation,landcover_cropland,|spearman r|>0.70,occupancy
+correlation,bio17,|spearman r|>0.70,occupancy
+correlation,bio12,|spearman r|>0.70,occupancy
+correlation,bio4,|spearman r|>0.70,occupancy
+correlation,bio19,|spearman r|>0.70,occupancy
+correlation,natural_landcover_fraction,|spearman r|>0.70,occupancy
+vif,bio14,VIF=7.49 > 5,occupancy
+retained,bio7,kept after cor/vif,occupancy
+retained,bio11,kept after cor/vif,occupancy
+retained,bio13,kept after cor/vif,occupancy
+retained,elev_mean,kept after cor/vif,occupancy
+retained,elev_sd,kept after cor/vif,occupancy
+retained,texture_contrast,kept after cor/vif,occupancy
+retained,npp_mean,kept after cor/vif,occupancy
+retained,landcover_trees,kept after cor/vif,occupancy
+retained,landcover_shrubs,kept after cor/vif,occupancy
+retained,landcover_grassland,kept after cor/vif,occupancy
+retained,landcover_water,kept after cor/vif,occupancy
+retained,habitat_diversity_shannon,kept after cor/vif,occupancy
+retained,hfi_mean,kept after cor/vif,occupancy
+retained,centroid_lat,kept after cor/vif,occupancy
+retained,centroid_lon,kept after cor/vif,occupancy

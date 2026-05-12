@@ -1,0 +1,14 @@
+step,variable,reason,scope
+correlation,log_egg_volume,abs(r)>0.7,species_traits
+correlation,log_body_mass,abs(r)>0.7,species_traits
+retained,clutch_size,retained after screening,species_traits
+retained,longevity_y,retained after screening,species_traits
+retained,maturity_y,retained after screening,species_traits
+retained,avonet_hwi,retained after screening,species_traits
+retained,log_elev_range,retained after screening,species_traits
+retained,bio4,retained after screening,community_environment
+retained,elev_sd,retained after screening,community_environment
+retained,texture_shannon,retained after screening,community_environment
+retained,npp_mean,retained after screening,community_environment
+retained,landcover_built,retained after screening,community_environment
+retained,centroid_lat,retained after screening,community_environment

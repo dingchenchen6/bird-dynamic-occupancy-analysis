@@ -1,0 +1,2 @@
+run_label,species_requested,species_fitted,n_sites,n_primary,n_secondary,n_batch,batch_length,n_burn,n_thin,n_chains,posterior_samples,ar1,min_detection_events,min_blocks_detected,min_grids_detected,estimated_psi_samples_gb
+top200sp_ar1,200,200,1331,5,5,80,25,400,2,1,800,TRUE,80,2,10,7.933378219604492

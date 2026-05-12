@@ -1,0 +1,42 @@
+step,variable,reason,scope
+correlation,bio8,abs(Spearman r)>0.7,occupancy_predictors
+correlation,bio6,abs(Spearman r)>0.7,occupancy_predictors
+correlation,bio16,abs(Spearman r)>0.7,occupancy_predictors
+correlation,texture_entropy,abs(Spearman r)>0.7,occupancy_predictors
+correlation,human_modified_fraction,abs(Spearman r)>0.7,occupancy_predictors
+correlation,bio5,abs(Spearman r)>0.7,occupancy_predictors
+correlation,bio9,abs(Spearman r)>0.7,occupancy_predictors
+correlation,bio2,abs(Spearman r)>0.7,occupancy_predictors
+correlation,natural_landcover_fraction,abs(Spearman r)>0.7,occupancy_predictors
+correlation,bio10,abs(Spearman r)>0.7,occupancy_predictors
+correlation,habitat_diversity_richness,abs(Spearman r)>0.7,occupancy_predictors
+correlation,bio3,abs(Spearman r)>0.7,occupancy_predictors
+correlation,landcover_built,abs(Spearman r)>0.7,occupancy_predictors
+correlation,bio1,abs(Spearman r)>0.7,occupancy_predictors
+correlation,bio18,abs(Spearman r)>0.7,occupancy_predictors
+correlation,texture_shannon,abs(Spearman r)>0.7,occupancy_predictors
+correlation,hfi_sd,abs(Spearman r)>0.7,occupancy_predictors
+correlation,bio15,abs(Spearman r)>0.7,occupancy_predictors
+correlation,landcover_cropland,abs(Spearman r)>0.7,occupancy_predictors
+correlation,bio17,abs(Spearman r)>0.7,occupancy_predictors
+correlation,bio12,abs(Spearman r)>0.7,occupancy_predictors
+correlation,habitat_dominance,abs(Spearman r)>0.7,occupancy_predictors
+correlation,bio4,abs(Spearman r)>0.7,occupancy_predictors
+correlation,bio19,abs(Spearman r)>0.7,occupancy_predictors
+correlation,habitat_diversity_evenness,abs(Spearman r)>0.7,occupancy_predictors
+vif,bio14,VIF>5,occupancy_predictors
+retained,bio7,retained after correlation/VIF screening,occupancy_predictors
+retained,bio11,retained after correlation/VIF screening,occupancy_predictors
+retained,bio13,retained after correlation/VIF screening,occupancy_predictors
+retained,elev_mean,mandatory keep,occupancy_predictors
+retained,elev_sd,mandatory keep,occupancy_predictors
+retained,texture_contrast,retained after correlation/VIF screening,occupancy_predictors
+retained,npp_mean,mandatory keep,occupancy_predictors
+retained,landcover_trees,retained after correlation/VIF screening,occupancy_predictors
+retained,landcover_shrubs,retained after correlation/VIF screening,occupancy_predictors
+retained,landcover_grassland,retained after correlation/VIF screening,occupancy_predictors
+retained,landcover_water,retained after correlation/VIF screening,occupancy_predictors
+retained,habitat_diversity_shannon,retained after correlation/VIF screening,occupancy_predictors
+retained,hfi_mean,mandatory keep,occupancy_predictors
+retained,centroid_lat,mandatory keep,occupancy_predictors
+retained,centroid_lon,retained after correlation/VIF screening,occupancy_predictors

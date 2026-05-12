@@ -1,0 +1,887 @@
+species,diet_specialization,habitat_breadth,Habitat,Habitat.Density,Migration,Trophic.Level,Trophic.Niche,Primary.Lifestyle,migration_score
+Passer montanus,0.8,5,Woodland,2,1,Omnivore,Granivore,Terrestrial,1
+Motacilla alba,0.8,8,Human Modified,3,3,Carnivore,Invertivore,Terrestrial,3
+Hirundo rustica,0.8,8,Human Modified,3,3,Carnivore,Invertivore,Aerial,3
+Parus minor,0.8,5,NA,NA,NA,NA,NA,NA,2
+Pica serica,0.8,5,NA,NA,NA,NA,NA,NA,2
+Streptopelia orientalis,0.2,8,Woodland,3,3,Herbivore,Omnivore,Terrestrial,3
+Phoenicurus auroreus,0.8,5,Forest,2,3,Omnivore,Invertivore,Insessorial,3
+Spilopelia chinensis,0.8,8,Woodland,3,1,Herbivore,Granivore,Terrestrial,1
+Falco tinnunculus,0.8,8,Shrubland,3,3,Carnivore,Vertivore,Aerial,3
+Pycnonotus sinensis,0.8,5,Human Modified,2,3,Herbivore,Frugivore,Insessorial,3
+Egretta garzetta,0.8,8,Wetland,3,2,Carnivore,Aquatic predator,Terrestrial,2
+Tachybaptus ruficollis,0.8,8,Wetland,3,1,Carnivore,Aquatic predator,Aquatic,1
+Upupa epops,0.8,8,Grassland,3,3,Carnivore,Invertivore,Terrestrial,3
+Ardea cinerea,0.8,8,Wetland,3,1,Carnivore,Aquatic predator,Terrestrial,1
+Alcedo atthis,0.8,5,Riverine,2,1,Carnivore,Aquatic predator,Insessorial,1
+Lanius schach,0.8,5,Shrubland,2,2,Carnivore,Invertivore,Insessorial,2
+Anas platyrhynchos,0.8,8,Wetland,3,2,Herbivore,Herbivore aquatic,Aquatic,2
+Phasianus colchicus,0.2,5,Human Modified,2,1,Herbivore,Omnivore,Terrestrial,1
+Motacilla cinerea,0.8,8,Riverine,3,2,Carnivore,Invertivore,Terrestrial,2
+Chloris sinica,0.8,5,Shrubland,2,1,Herbivore,Granivore,Generalist,1
+Cecropis daurica,0.8,8,Grassland,3,3,Carnivore,Invertivore,Aerial,3
+Ardeola bacchus,0.8,8,Wetland,3,2,Carnivore,Aquatic predator,Terrestrial,2
+Anthus hodgsoni,0.8,8,Grassland,3,3,Carnivore,Invertivore,Terrestrial,3
+Ardea alba,0.8,8,Wetland,3,2,Carnivore,Aquatic predator,Terrestrial,2
+Gallinula chloropus,0.2,8,Wetland,3,1,Omnivore,Omnivore,Terrestrial,1
+Tadorna ferruginea,0.2,8,Wetland,3,2,Omnivore,Omnivore,Terrestrial,2
+Cuculus canorus,0.8,5,Forest,2,3,Carnivore,Invertivore,Insessorial,3
+Turdus mandarinus,0.2,5,Forest,2,1,Omnivore,Omnivore,Generalist,1
+Phalacrocorax carbo,0.8,8,Wetland,3,2,Carnivore,Aquatic predator,Aquatic,2
+Acridotheres cristatellus,0.2,8,Grassland,3,2,Omnivore,Omnivore,Generalist,2
+Corvus macrorhynchos,0.2,5,Woodland,2,1,Omnivore,Omnivore,Generalist,1
+Anas zonorhyncha,0.8,8,Wetland,3,2,Herbivore,Herbivore aquatic,Aquatic,2
+Fulica atra,0.8,8,Wetland,3,1,Herbivore,Herbivore aquatic,Generalist,1
+Milvus migrans,0.2,8,Woodland,3,3,Omnivore,Omnivore,Aerial,3
+Phoenicurus fuliginosus,0.8,8,Riverine,3,1,Carnivore,Aquatic predator,Insessorial,1
+Podiceps cristatus,0.8,8,Wetland,3,1,Carnivore,Aquatic predator,Aquatic,1
+Copsychus saularis,0.8,2,Woodland,1,1,Carnivore,Invertivore,Terrestrial,1
+Actitis hypoleucos,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Zosterops simplex,0.2,5,Forest,2,1,Omnivore,Omnivore,Insessorial,1
+Sinosuthora webbiana,0.2,5,Shrubland,2,1,Herbivore,Omnivore,Insessorial,1
+Lanius cristatus,0.8,8,Shrubland,3,3,Carnivore,Invertivore,Insessorial,3
+Nycticorax nycticorax,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Dicrurus macrocercus,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Insessorial,1
+Spodiopsar cineraceus,0.8,8,Grassland,3,1,Carnivore,Invertivore,Terrestrial,1
+Cyanopica cyanus,0.2,5,Woodland,2,1,Omnivore,Omnivore,Generalist,1
+Phylloscopus inornatus,0.8,2,Woodland,1,3,Carnivore,Invertivore,Insessorial,3
+Phylloscopus proregulus,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Emberiza pusilla,0.8,5,Forest,2,3,Herbivore,Granivore,Generalist,3
+Corvus corone,0.2,8,Human Modified,3,1,Carnivore,Omnivore,Terrestrial,1
+Chroicocephalus ridibundus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Dendrocopos major,0.2,2,Woodland,1,1,Omnivore,Omnivore,Insessorial,1
+Aegithalos concinnus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Buteo japonicus,0.8,8,Grassland,3,2,Carnivore,Vertivore,Insessorial,2
+Tringa ochropus,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Bubulcus coromandus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Tarsiger cyanurus,0.8,2,Forest,1,3,Carnivore,Invertivore,Generalist,3
+Spizixos semitorques,0.2,5,Shrubland,2,1,Omnivore,Omnivore,Insessorial,1
+Columba livia,0.8,8,Human Modified,3,1,Herbivore,Granivore,Terrestrial,1
+Accipiter nisus,0.8,2,Forest,1,2,Carnivore,Vertivore,Insessorial,2
+Anas carolinensis,0.8,8,Wetland,3,2,Omnivore,Aquatic predator,Aquatic,2
+Charadrius dubius,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Himantopus himantopus,0.8,8,Wetland,3,2,Carnivore,Aquatic predator,Terrestrial,2
+Prinia inornata,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Generalist,1
+Emberiza spodocephala,0.8,5,Shrubland,2,3,Carnivore,Invertivore,Terrestrial,3
+Picus canus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Phylloscopus fuscatus,0.8,2,Wetland,1,3,Carnivore,Invertivore,Insessorial,3
+Buteo hemilasius,0.8,8,Grassland,3,1,Carnivore,Vertivore,Generalist,1
+Spodiopsar sericeus,0.8,5,Shrubland,2,2,Omnivore,Invertivore,Insessorial,2
+Garrulus glandarius,0.2,2,Forest,1,2,Omnivore,Omnivore,Insessorial,2
+Sterna hirundo,0.8,8,Marine,3,3,Carnivore,Aquatic predator,Aerial,3
+Columba rupestris,0.8,8,Rock,3,1,Herbivore,Granivore,Terrestrial,1
+Pomatorhinus ruficollis,0.8,5,Forest,2,1,Carnivore,Invertivore,Generalist,1
+Mergus merganser,0.8,8,Riverine,3,3,Carnivore,Aquatic predator,Aquatic,3
+Fringilla montifringilla,0.2,2,Forest,1,3,Herbivore,Omnivore,Generalist,3
+Passer cinnamomeus,0.8,5,Forest,2,1,Herbivore,Granivore,Terrestrial,1
+Myophonus caeruleus,0.2,2,Forest,1,1,Carnivore,Omnivore,Terrestrial,1
+Pyrrhocorax pyrrhocorax,0.8,8,Rock,3,2,Carnivore,Invertivore,Terrestrial,2
+Saxicola stejnegeri,0.8,5,NA,NA,NA,NA,NA,NA,2
+Horornis fortipes,0.8,2,Forest,1,2,Carnivore,Invertivore,Generalist,2
+Pardaliparus venustulus,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Streptopelia decaocto,0.2,8,Human Modified,3,1,Herbivore,Omnivore,Terrestrial,1
+Pycnonotus xanthorrhous,0.8,5,Shrubland,2,1,Herbivore,Frugivore,Insessorial,1
+Eophona migratoria,0.2,5,Forest,2,1,Herbivore,Omnivore,Insessorial,1
+Emberiza elegans,0.2,8,Woodland,3,2,Omnivore,Omnivore,Terrestrial,2
+Mareca strepera,0.8,8,Wetland,3,2,Herbivore,Herbivore aquatic,Aquatic,2
+Pterorhinus sannio,0.8,5,NA,NA,NA,NA,NA,NA,2
+Lonchura striata,0.8,8,Shrubland,3,1,Herbivore,Granivore,Insessorial,1
+Tringa nebularia,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Motacilla tschutschensis,0.8,8,Grassland,3,3,Carnivore,Invertivore,Terrestrial,3
+Hypsipetes leucocephalus,0.8,2,Forest,1,3,Herbivore,Frugivore,Insessorial,3
+Urocissa erythroryncha,0.2,2,Forest,1,1,Carnivore,Omnivore,Insessorial,1
+Delichon dasypus,0.8,5,Rock,2,3,Carnivore,Invertivore,Aerial,3
+Carpodacus erythrinus,0.8,5,Shrubland,2,3,Herbivore,Granivore,Insessorial,3
+Tringa totanus,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Motacilla citreola,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Falco peregrinus,0.8,8,Grassland,3,2,Carnivore,Vertivore,Aerial,2
+Aythya ferina,0.8,8,Wetland,3,1,Herbivore,Herbivore aquatic,Aquatic,1
+Vanellus cinereus,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Vanellus vanellus,0.2,8,Wetland,3,2,Carnivore,Omnivore,Terrestrial,2
+Tringa glareola,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Falco subbuteo,0.8,8,Woodland,3,3,Carnivore,Invertivore,Aerial,3
+Ixos mcclellandii,0.2,2,Woodland,1,1,Omnivore,Omnivore,Insessorial,1
+Gallinago gallinago,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Lonchura punctulata,0.8,5,Grassland,2,1,Herbivore,Granivore,Generalist,1
+Apus pacificus,0.8,2,Woodland,1,2,Carnivore,Invertivore,Aerial,2
+Apus nipalensis,0.8,2,Human Modified,1,3,Carnivore,Invertivore,Aerial,3
+Eudynamys scolopaceus,0.8,5,Woodland,2,2,Herbivore,Frugivore,Insessorial,2
+Chlidonias hybrida,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Aerial,3
+Oriolus chinensis,0.8,5,Forest,2,2,Omnivore,Frugivore,Insessorial,2
+Periparus ater,0.8,2,Forest,1,1,Omnivore,Invertivore,Insessorial,1
+Amaurornis phoenicurus,0.8,5,Wetland,2,1,Carnivore,Aquatic predator,Terrestrial,1
+Charadrius alexandrinus,0.8,8,Coastal,3,2,Carnivore,Aquatic predator,Terrestrial,2
+Apus apus,0.8,2,Human Modified,1,3,Carnivore,Invertivore,Aerial,3
+Falco amurensis,0.8,8,Grassland,3,3,Carnivore,Invertivore,Insessorial,3
+Spatula clypeata,0.8,8,Wetland,3,3,Omnivore,Aquatic predator,Aquatic,3
+Aegithalos glaucogularis,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Abroscopus albogularis,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Cuculus micropterus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Turdus eunomus,0.8,5,Forest,2,3,Omnivore,Invertivore,Generalist,3
+Lanius tephronotus,0.8,8,Grassland,3,3,Carnivore,Invertivore,Insessorial,3
+Emberiza cioides,0.8,8,Grassland,3,2,Herbivore,Granivore,Terrestrial,2
+Phoenicurus ochruros,0.8,8,Rock,3,2,Omnivore,Invertivore,Insessorial,2
+Circus cyaneus,0.8,8,Grassland,3,3,Carnivore,Vertivore,Aerial,3
+Aythya fuligula,0.8,8,Wetland,3,2,Omnivore,Herbivore aquatic,Aquatic,2
+Accipiter trivirgatus,0.8,2,Forest,1,1,Carnivore,Vertivore,Insessorial,1
+Mareca penelope,0.2,8,Wetland,3,3,Herbivore,Omnivore,Terrestrial,3
+Pernis ptilorhynchus,0.8,5,Woodland,2,1,Carnivore,Invertivore,Insessorial,1
+Anthus richardi,0.8,8,Grassland,3,3,Carnivore,Invertivore,Terrestrial,3
+Leiothrix lutea,0.8,2,Shrubland,1,1,Carnivore,Invertivore,Insessorial,1
+Ficedula albicilla,0.8,5,Woodland,2,3,Carnivore,Invertivore,Insessorial,3
+Anthus spinoletta,0.8,8,Grassland,3,3,Carnivore,Invertivore,Terrestrial,3
+Emberiza godlewskii,0.8,5,Shrubland,2,2,Omnivore,Granivore,Terrestrial,2
+Alauda gulgula,0.2,8,Grassland,3,2,Omnivore,Omnivore,Terrestrial,2
+Aythya nyroca,0.8,8,Wetland,3,3,Herbivore,Herbivore aquatic,Aquatic,3
+Gyps himalayensis,0.5,8,Rock,3,1,Scavenger,Scavenger,Terrestrial,1
+Anas acuta,0.8,8,Wetland,3,3,Herbivore,Herbivore aquatic,Aquatic,3
+Ixobrychus sinensis,0.8,2,Wetland,1,3,Carnivore,Aquatic predator,Terrestrial,3
+Parus monticolus,0.8,2,Forest,1,1,Omnivore,Invertivore,Insessorial,1
+Alauda arvensis,0.2,8,Grassland,3,2,Omnivore,Omnivore,Terrestrial,2
+Dicrurus hottentottus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Acrocephalus orientalis,0.8,8,Wetland,3,3,Carnivore,Invertivore,Insessorial,3
+Enicurus leschenaulti,0.8,8,Riverine,3,1,Carnivore,Aquatic predator,Terrestrial,1
+Bambusicola thoracicus,0.2,5,Forest,2,1,Herbivore,Omnivore,Terrestrial,1
+Elanus caeruleus,0.8,8,Grassland,3,2,Carnivore,Vertivore,Aerial,2
+Picumnus innominatus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Recurvirostra avosetta,0.8,8,Wetland,3,2,Carnivore,Aquatic predator,Terrestrial,2
+Eremophila alpestris,0.2,8,Grassland,3,3,Omnivore,Omnivore,Terrestrial,3
+Turdus naumanni,0.8,5,Forest,2,3,Omnivore,Invertivore,Generalist,3
+Monticola solitarius,0.2,8,Rock,3,2,Carnivore,Omnivore,Insessorial,2
+Hemixos castanonotus,0.8,2,Forest,1,2,Omnivore,Frugivore,Insessorial,2
+Anser anser,0.8,8,Wetland,3,3,Herbivore,Herbivore terrestrial,Terrestrial,3
+Dicrurus leucophaeus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Saxicola maurus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Pycnonotus jocosus,0.2,5,Shrubland,2,1,Herbivore,Omnivore,Insessorial,1
+Mareca falcata,0.8,8,Wetland,3,3,Herbivore,Herbivore aquatic,Aquatic,3
+Aix galericulata,0.8,8,Forest,3,3,Herbivore,Herbivore aquatic,Generalist,3
+Tringa erythropus,0.8,8,Grassland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Stachyridopsis ruficeps,0.8,5,NA,NA,NA,NA,NA,NA,2
+Riparia riparia,0.8,8,Riverine,3,3,Carnivore,Invertivore,Aerial,3
+Phoenicurus frontalis,0.8,2,Forest,1,2,Carnivore,Invertivore,Insessorial,2
+Tadorna tadorna,0.8,8,Coastal,3,2,Carnivore,Aquatic predator,Generalist,2
+Corvus corax,0.2,8,Forest,3,2,Omnivore,Omnivore,Terrestrial,2
+Culicicapa ceylonensis,0.8,2,Woodland,1,1,Carnivore,Invertivore,Insessorial,1
+Yungipicus canicapillus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Muscicapa sibirica,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Cinclus pallasii,0.8,8,Riverine,3,1,Carnivore,Aquatic predator,Generalist,1
+Platalea leucorodia,0.8,8,Wetland,3,2,Carnivore,Aquatic predator,Terrestrial,2
+Dendrocitta formosae,0.2,5,Forest,2,1,Omnivore,Omnivore,Insessorial,1
+Chaimarrornis leucocephalus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Butorides striata,0.8,8,Wetland,3,1,Carnivore,Aquatic predator,Terrestrial,1
+Trochalopteron elliotii,0.8,2,Forest,1,1,Carnivore,Invertivore,Generalist,1
+Turdus hortulorum,0.8,2,Forest,1,3,Carnivore,Invertivore,Terrestrial,3
+Troglodytes troglodytes,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Cisticola juncidis,0.8,8,Grassland,3,3,Carnivore,Invertivore,Generalist,3
+Gracupica nigricollis,0.8,8,Grassland,3,1,Carnivore,Invertivore,Insessorial,1
+Pycnonotus aurigaster,0.2,5,Shrubland,2,1,Herbivore,Omnivore,Insessorial,1
+Phylloscopus humei,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Circus spilonotus,0.8,8,Wetland,3,3,Carnivore,Vertivore,Aerial,3
+Pericrocotus solaris,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Cuculus sparverioides,0.8,5,NA,NA,NA,NA,NA,NA,2
+Aquila chrysaetos,0.8,8,Grassland,3,2,Carnivore,Vertivore,Aerial,2
+Ptyonoprogne rupestris,0.8,8,Rock,3,2,Carnivore,Invertivore,Aerial,2
+Anthus rubescens,0.8,8,Grassland,3,3,Carnivore,Invertivore,Terrestrial,3
+Picoides canicapillus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Lanius sphenocercus,0.8,8,Grassland,3,2,Carnivore,Invertivore,Insessorial,2
+Psilopogon virens,0.8,2,Forest,1,1,Herbivore,Frugivore,Insessorial,1
+Ceryle rudis,0.8,8,Wetland,3,1,Carnivore,Aquatic predator,Insessorial,1
+Halcyon smyrnensis,0.2,5,Human Modified,2,2,Carnivore,Omnivore,Insessorial,2
+Regulus regulus,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Sitta europaea,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Garrulax canorus,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Terrestrial,1
+Riparia diluta,0.8,8,Riverine,3,3,Carnivore,Invertivore,Aerial,3
+Saxicola ferreus,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Insessorial,1
+Accipiter soloensis,0.8,2,Forest,1,3,Carnivore,Vertivore,Insessorial,3
+Accipiter virgatus,0.8,2,Forest,1,2,Carnivore,Vertivore,Generalist,2
+Aethopyga christinae,0.2,2,Forest,1,1,Herbivore,Omnivore,Insessorial,1
+Eumyias thalassinus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Prinia flaviventris,0.8,8,Shrubland,3,1,Carnivore,Invertivore,Insessorial,1
+Athene noctua,0.2,8,Human Modified,3,1,Carnivore,Omnivore,Insessorial,1
+Anthus roseatus,0.8,8,Grassland,3,1,Carnivore,Invertivore,Terrestrial,1
+Phoenicurus hodgsoni,0.8,5,Woodland,2,3,Omnivore,Invertivore,Insessorial,3
+Accipiter gentilis,0.8,2,Forest,1,2,Carnivore,Vertivore,Generalist,2
+Anser indicus,0.8,8,Wetland,3,3,Herbivore,Herbivore terrestrial,Terrestrial,3
+Emberiza tristrami,0.8,2,Forest,1,3,Omnivore,Granivore,Terrestrial,3
+Netta rufina,0.8,8,Wetland,3,2,Herbivore,Herbivore aquatic,Aquatic,2
+Corvus frugilegus,0.2,8,Grassland,3,1,Omnivore,Omnivore,Terrestrial,1
+Orthotomus sutorius,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Insessorial,1
+Ciconia nigra,0.8,5,Woodland,2,3,Carnivore,Aquatic predator,Terrestrial,3
+Phylloscopus borealis,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Pericrocotus ethologus,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Spatula querquedula,0.8,8,Wetland,3,3,Omnivore,Herbivore aquatic,Aquatic,3
+Ardea intermedia,0.8,8,Wetland,3,2,Carnivore,Aquatic predator,Terrestrial,2
+Nucifraga caryocatactes,0.8,2,Forest,1,2,Omnivore,Granivore,Insessorial,2
+Ardea purpurea,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Cyanoderma ruficeps,0.8,2,Shrubland,1,1,Carnivore,Invertivore,Insessorial,1
+Streptopelia tranquebarica,0.8,5,Woodland,2,1,Herbivore,Granivore,Terrestrial,1
+Emberiza rustica,0.8,5,Forest,2,3,Herbivore,Granivore,Generalist,3
+Limosa limosa,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Spinus spinus,0.8,2,Forest,1,1,Herbivore,Granivore,Insessorial,1
+Chlidonias leucopterus,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Aerial,3
+Ficedula zanthopygia,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Glaucidium cuculoides,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Pterorhinus perspicillatus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Egretta intermedia,0.8,5,NA,NA,NA,NA,NA,NA,2
+Calidris temminckii,0.8,8,Grassland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Phylloscopus claudiae,0.8,5,Forest,2,2,Carnivore,Invertivore,Insessorial,2
+Emberiza chrysophrys,0.2,5,Forest,2,3,Omnivore,Omnivore,Terrestrial,3
+Emberiza pallasi,0.2,8,Shrubland,3,3,Omnivore,Omnivore,Terrestrial,3
+Larus brunnicephalus,0.8,8,Wetland,3,1,Carnivore,Aquatic predator,Generalist,1
+Spilornis cheela,0.8,2,Forest,1,1,Carnivore,Vertivore,Insessorial,1
+Centropus sinensis,0.8,5,Woodland,2,1,Carnivore,Vertivore,Terrestrial,1
+Bucephala clangula,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Aquatic,3
+Tringa stagnatilis,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Charadrius placidus,0.8,8,Riverine,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Glaucidium brodiei,0.8,2,Forest,1,1,Carnivore,Vertivore,Insessorial,1
+Megaceryle lugubris,0.8,5,Riverine,2,1,Carnivore,Aquatic predator,Insessorial,1
+Larus ichthyaetus,0.2,8,Coastal,3,3,Omnivore,Omnivore,Generalist,3
+Sturnus vulgaris,0.2,8,Human Modified,3,2,Omnivore,Omnivore,Insessorial,2
+Anser cygnoides,0.8,5,NA,NA,NA,NA,NA,NA,2
+Pseudopodoces humilis,0.8,8,Rock,3,2,Carnivore,Invertivore,Terrestrial,2
+Zosterops erythropleurus,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Hierococcyx sparverioides,0.8,2,Woodland,1,3,Carnivore,Invertivore,Insessorial,3
+Phylloscopus trochiloides,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Larus argentatus,0.8,8,Coastal,3,2,Carnivore,Aquatic predator,Generalist,2
+Gypaetus barbatus,0.5,8,Rock,3,2,Scavenger,Scavenger,Terrestrial,2
+Turdus rubrocanus,0.8,2,Forest,1,1,Omnivore,Invertivore,Generalist,1
+Enicurus schistaceus,0.8,8,Riverine,3,1,Carnivore,Aquatic predator,Terrestrial,1
+Linaria flavirostris,0.8,8,Grassland,3,3,Herbivore,Granivore,Insessorial,3
+Caprimulgus jotaka,0.8,5,Forest,2,1,Carnivore,Invertivore,Generalist,1
+Eurystomus orientalis,0.8,5,Woodland,2,3,Carnivore,Invertivore,Aerial,3
+Pericrocotus cantonensis,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Podiceps nigricollis,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Aquatic,3
+Cuculus poliocephalus,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Pandion haliaetus,0.8,8,Marine,3,3,Carnivore,Aquatic predator,Aerial,3
+Prunella strophiata,0.8,5,Forest,2,2,Omnivore,Invertivore,Terrestrial,2
+Poecile montanus,0.8,2,Forest,1,1,Omnivore,Invertivore,Insessorial,1
+Passer domesticus,0.8,8,Human Modified,3,1,Herbivore,Granivore,Terrestrial,1
+Muscicapa latirostris,0.8,5,NA,NA,NA,NA,NA,NA,2
+Garrulax perspicillatus,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Terrestrial,1
+Butastur indicus,0.8,5,Woodland,2,3,Carnivore,Vertivore,Insessorial,3
+Anser fabalis,0.8,8,Wetland,3,3,Herbivore,Herbivore terrestrial,Terrestrial,3
+Halcyon pileata,0.8,5,Riverine,2,2,Carnivore,Invertivore,Insessorial,2
+Enicurus scouleri,0.8,8,Riverine,3,1,Carnivore,Aquatic predator,Terrestrial,1
+Pericrocotus speciosus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Cygnus cygnus,0.8,8,Wetland,3,3,Herbivore,Herbivore aquatic,Aquatic,3
+Acrocephalus bistrigiceps,0.8,8,Wetland,3,3,Carnivore,Invertivore,Insessorial,3
+Alcippe hueti,0.8,5,NA,NA,NA,NA,NA,NA,2
+Phoenicurus erythrogastrus,0.8,5,Grassland,2,2,Carnivore,Invertivore,Insessorial,2
+Alcippe davidi,0.8,5,NA,NA,NA,NA,NA,NA,2
+Dicaeum ignipectus,0.2,2,Forest,1,1,Herbivore,Omnivore,Insessorial,1
+Emberiza fucata,0.8,5,Shrubland,2,3,Herbivore,Granivore,Terrestrial,3
+Jynx torquilla,0.8,2,Woodland,1,3,Carnivore,Invertivore,Terrestrial,3
+Larus vegae,0.8,5,NA,NA,NA,NA,NA,NA,2
+Luscinia svecica,0.8,5,NA,NA,NA,NA,NA,NA,2
+Dendronanthus indicus,0.8,2,Forest,1,3,Carnivore,Invertivore,Terrestrial,3
+Muscicapa dauurica,0.8,2,Woodland,1,3,Carnivore,Invertivore,Insessorial,3
+Prunella fulvescens,0.8,8,Shrubland,3,2,Omnivore,Invertivore,Terrestrial,2
+Remiz consobrinus,0.8,5,Wetland,2,3,Omnivore,Invertivore,Insessorial,3
+Phylloscopus pulcher,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Turdus ruficollis,0.8,2,Forest,1,3,Omnivore,Invertivore,Insessorial,3
+Coloeus dauuricus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Phylloscopus armandii,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Insessorial,1
+Phylloscopus coronatus,0.8,5,Woodland,2,3,Carnivore,Invertivore,Insessorial,3
+Calidris alpina,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Cygnus columbianus,0.8,8,Wetland,3,3,Herbivore,Herbivore aquatic,Aquatic,3
+Numenius arquata,0.8,8,Grassland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Otus sunia,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Mergellus albellus,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Aquatic,3
+Pluvialis fulva,0.2,8,Grassland,3,3,Carnivore,Omnivore,Terrestrial,3
+Oenanthe isabellina,0.8,8,Shrubland,3,3,Carnivore,Invertivore,Insessorial,3
+Pyrgilauda ruficollis,0.8,8,Grassland,3,2,Herbivore,Granivore,Terrestrial,2
+Corvus pectoralis,0.2,8,Shrubland,3,1,Omnivore,Omnivore,Terrestrial,1
+Circus melanoleucos,0.8,8,Grassland,3,3,Carnivore,Vertivore,Aerial,3
+Pnoepyga pusilla,0.8,2,Forest,1,1,Carnivore,Invertivore,Terrestrial,1
+Botaurus stellaris,0.8,2,Wetland,1,2,Carnivore,Aquatic predator,Terrestrial,2
+Galerida cristata,0.2,8,Grassland,3,1,Omnivore,Omnivore,Terrestrial,1
+Grus grus,0.2,8,Wetland,3,3,Herbivore,Omnivore,Terrestrial,3
+Zoothera aurea,0.8,2,Forest,1,3,Carnivore,Invertivore,Generalist,3
+Phoenicurus leucocephalus,0.8,5,Riverine,2,1,Carnivore,Aquatic predator,Terrestrial,1
+Pica bottanensis,0.8,5,NA,NA,NA,NA,NA,NA,2
+Accipiter gularis,0.8,2,Forest,1,3,Carnivore,Vertivore,Insessorial,3
+Centropus bengalensis,0.8,5,Grassland,2,1,Carnivore,Invertivore,Terrestrial,1
+Sternula albifrons,0.8,8,Coastal,3,3,Carnivore,Aquatic predator,Aerial,3
+Coturnix japonica,0.2,8,Grassland,3,3,Herbivore,Omnivore,Terrestrial,3
+Blythipicus pyrrhotis,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Aethopyga gouldiae,0.8,2,Forest,1,2,Omnivore,Nectarivore,Insessorial,2
+Grus nigricollis,0.2,8,Wetland,3,3,Omnivore,Omnivore,Terrestrial,3
+Anthus cervinus,0.8,8,Grassland,3,3,Carnivore,Invertivore,Terrestrial,3
+Phoenicurus schisticeps,0.8,2,Forest,1,2,Omnivore,Invertivore,Insessorial,2
+Pyrrhula erythaca,0.2,2,Forest,1,1,Herbivore,Omnivore,Insessorial,1
+Periparus rubidiventris,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Alaudala cheleensis,0.8,5,NA,NA,NA,NA,NA,NA,2
+Lanius tigrinus,0.8,5,Woodland,2,3,Carnivore,Invertivore,Insessorial,3
+Poecile palustris,0.8,2,Forest,1,1,Omnivore,Invertivore,Insessorial,1
+Prunella rubeculoides,0.2,5,Shrubland,2,2,Omnivore,Omnivore,Terrestrial,2
+Onychostruthus taczanowskii,0.8,8,Grassland,3,2,Omnivore,Granivore,Terrestrial,2
+Oenanthe deserti,0.8,8,Grassland,3,2,Carnivore,Invertivore,Insessorial,2
+Phylloscopus yunnanensis,0.8,5,Shrubland,2,2,Carnivore,Invertivore,Insessorial,2
+Phylloscopus affinis,0.8,2,Shrubland,1,3,Carnivore,Invertivore,Insessorial,3
+Phylloscopus magnirostris,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Corvus dauuricus,0.2,8,Grassland,3,2,Omnivore,Omnivore,Terrestrial,2
+Calidris ruficollis,0.8,8,Grassland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Erpornis zantholeuca,0.8,2,Forest,1,1,Omnivore,Invertivore,Insessorial,1
+Paradoxornis gularis,0.8,5,NA,NA,NA,NA,NA,NA,2
+Turdus obscurus,0.8,2,Forest,1,3,Omnivore,Invertivore,Insessorial,3
+Ciconia boyciana,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Monticola rufiventris,0.8,2,Forest,1,1,Carnivore,Invertivore,Generalist,1
+Muscicapa griseisticta,0.8,2,Shrubland,1,3,Carnivore,Invertivore,Insessorial,3
+Turdus cardis,0.8,2,Forest,1,3,Omnivore,Invertivore,Terrestrial,3
+Turdus kessleri,0.8,5,Forest,2,3,Omnivore,Invertivore,Generalist,3
+Turdus pallidus,0.8,2,Forest,1,3,Omnivore,Invertivore,Generalist,3
+Cuculus saturatus,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Oenanthe pleschanka,0.8,8,Rock,3,3,Carnivore,Invertivore,Insessorial,3
+Otocichla mupinensis,0.2,2,Forest,1,1,Omnivore,Omnivore,Generalist,1
+Aquila nipalensis,0.8,8,Grassland,3,3,Carnivore,Vertivore,Aerial,3
+Anser albifrons,0.8,8,Grassland,3,3,Herbivore,Herbivore terrestrial,Terrestrial,3
+Calidris subminuta,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Lophura nycthemera,0.2,2,Forest,1,1,Herbivore,Omnivore,Terrestrial,1
+Ixobrychus cinnamomeus,0.8,2,Human Modified,1,1,Carnivore,Aquatic predator,Terrestrial,1
+Phylloscopus schwarzi,0.8,5,Shrubland,2,3,Carnivore,Invertivore,Insessorial,3
+Coccothraustes coccothraustes,0.2,2,Forest,1,2,Herbivore,Omnivore,Insessorial,2
+Carpodacus dubius,0.2,5,Shrubland,2,2,Herbivore,Omnivore,Insessorial,2
+Cinclus cinclus,0.8,8,Riverine,3,1,Carnivore,Aquatic predator,Generalist,1
+Pericrocotus divaricatus,0.8,5,Forest,2,3,Carnivore,Invertivore,Insessorial,3
+Carpodacus pulcherrimus,0.8,5,Shrubland,2,2,Herbivore,Granivore,Insessorial,2
+Glareola maldivarum,0.8,8,Grassland,3,3,Carnivore,Invertivore,Aerial,3
+Mycerobas carnipes,0.2,5,Forest,2,1,Herbivore,Omnivore,Insessorial,1
+Luscinia calliope,0.8,5,NA,NA,NA,NA,NA,NA,2
+Aviceda leuphotes,0.8,5,Forest,2,3,Carnivore,Invertivore,Insessorial,3
+Lanius bucephalus,0.8,8,Shrubland,3,3,Carnivore,Invertivore,Insessorial,3
+Phylloscopus plumbeitarsus,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Phylloscopus subaffinis,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Insessorial,1
+Anser serrirostris,0.8,5,NA,NA,NA,NA,NA,NA,2
+Pluvialis squatarola,0.8,8,Grassland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Lophophanes dichrous,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Otus lettia,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Tichodroma muraria,0.8,2,Rock,1,2,Carnivore,Invertivore,Insessorial,2
+Yuhina diademata,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Yuhina torqueola,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Phylloscopus forresti,0.8,5,Forest,2,2,Carnivore,Invertivore,Insessorial,2
+Rhopophilus pekinensis,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Insessorial,1
+Staphida torqueola,0.8,5,NA,NA,NA,NA,NA,NA,2
+Ficedula erithacus,0.2,2,Forest,1,1,Omnivore,Omnivore,Insessorial,1
+Lanius isabellinus,0.8,5,Shrubland,2,3,Carnivore,Invertivore,Insessorial,3
+Leucosticte nemoricola,0.8,8,Grassland,3,2,Herbivore,Granivore,Terrestrial,2
+Garrulax davidi,0.8,5,Shrubland,2,1,Omnivore,Invertivore,Insessorial,1
+Emberiza leucocephalos,0.2,5,Forest,2,3,Omnivore,Omnivore,Terrestrial,3
+Gelochelidon nilotica,0.2,8,Coastal,3,3,Carnivore,Omnivore,Aerial,3
+Horornis canturians,0.8,2,Shrubland,1,2,Carnivore,Invertivore,Generalist,2
+Hydrophasianus chirurgus,0.8,8,Wetland,3,2,Omnivore,Aquatic predator,Terrestrial,2
+Calidris ferruginea,0.8,8,Coastal,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Cyanoptila cyanomelana,0.8,2,Forest,1,3,Carnivore,Invertivore,Terrestrial,3
+Numenius phaeopus,0.2,8,Grassland,3,3,Carnivore,Omnivore,Terrestrial,3
+Ficedula mugimaki,0.8,5,Forest,2,3,Carnivore,Invertivore,Insessorial,3
+Oenanthe oenanthe,0.8,8,Grassland,3,3,Carnivore,Invertivore,Insessorial,3
+Larvivora sibilans,0.8,2,Forest,1,3,Carnivore,Invertivore,Terrestrial,3
+Pomatorhinus gravivox,0.8,5,NA,NA,NA,NA,NA,NA,2
+Lalage melaschistos,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Sitta villosa,0.2,2,Forest,1,1,Omnivore,Omnivore,Insessorial,1
+Hirundapus caudacutus,0.8,2,Woodland,1,3,Carnivore,Invertivore,Aerial,3
+Emberiza rutila,0.8,5,Forest,2,3,Carnivore,Invertivore,Terrestrial,3
+Sibirionetta formosa,0.8,8,Wetland,3,3,Herbivore,Herbivore aquatic,Aquatic,3
+Leptopoecile sophiae,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Rhipidura albicollis,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Aegypius monachus,0.5,5,Forest,2,1,Scavenger,Scavenger,Terrestrial,1
+Phylloscopus ricketti,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Tarsiger rufilatus,0.8,2,Forest,1,3,Carnivore,Invertivore,Generalist,3
+Larus crassirostris,0.8,8,Coastal,3,2,Carnivore,Aquatic predator,Aerial,2
+Pica pica,0.2,8,Human Modified,3,1,Omnivore,Omnivore,Terrestrial,1
+Pyrrhocorax graculus,0.8,8,Rock,3,2,Carnivore,Invertivore,Terrestrial,2
+Turdus atrogularis,0.8,2,Forest,1,3,Omnivore,Invertivore,Insessorial,3
+Aythya baeri,0.8,8,Wetland,3,3,Omnivore,Herbivore aquatic,Aquatic,3
+Buteo refectus,0.8,8,Grassland,3,2,Carnivore,Vertivore,Insessorial,2
+Zapornia akool,0.2,2,Wetland,1,2,Carnivore,Omnivore,Terrestrial,2
+Apus salimalii,0.8,5,NA,NA,NA,NA,NA,NA,2
+Yuhina nigrimenta,0.8,2,Forest,1,1,Omnivore,Invertivore,Insessorial,1
+Aerodramus brevirostris,0.8,2,Rock,1,1,Carnivore,Invertivore,Aerial,1
+Minla cyanouroptera,0.8,5,NA,NA,NA,NA,NA,NA,2
+Terpsiphone incei,0.8,5,Woodland,2,2,Carnivore,Invertivore,Insessorial,2
+Delichon urbicum,0.8,8,Human Modified,3,3,Carnivore,Invertivore,Aerial,3
+Seicercus castaniceps,0.8,5,NA,NA,NA,NA,NA,NA,2
+Dendrocopos hyperythrus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Petronia petronia,0.8,8,Rock,3,1,Herbivore,Granivore,Terrestrial,1
+Coracina melaschistos,0.8,5,NA,NA,NA,NA,NA,NA,2
+Sitta nagaensis,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Charadrius leschenaultii,0.8,8,Grassland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Carpodacus sibiricus,0.2,5,Shrubland,2,2,Herbivore,Omnivore,Insessorial,2
+Loxia curvirostra,0.8,2,Forest,1,2,Herbivore,Granivore,Insessorial,2
+Rallus indicus,0.8,2,Wetland,1,2,Carnivore,Aquatic predator,Terrestrial,2
+Zosterops palpebrosus,0.2,2,Forest,1,1,Omnivore,Omnivore,Insessorial,1
+Carpodacus rubicilloides,0.8,5,Shrubland,2,1,Herbivore,Granivore,Generalist,1
+Falco cherrug,0.8,8,Grassland,3,3,Carnivore,Vertivore,Generalist,3
+Carpodacus waltoni,0.8,8,Grassland,3,2,Herbivore,Granivore,Terrestrial,2
+Larus canus,0.2,8,Coastal,3,3,Carnivore,Omnivore,Terrestrial,3
+Clamator coromandus,0.8,5,Woodland,2,3,Carnivore,Invertivore,Insessorial,3
+Hieraaetus pennatus,0.8,2,Forest,1,3,Carnivore,Vertivore,Generalist,3
+Chloropsis hardwickii,0.2,2,Shrubland,1,3,Omnivore,Omnivore,Insessorial,3
+Bombycilla garrulus,0.2,2,Forest,1,3,Herbivore,Omnivore,Insessorial,3
+Bubo bubo,0.8,5,Rock,2,1,Carnivore,Vertivore,Insessorial,1
+Phylloscopus tenellipes,0.8,5,Forest,2,3,Carnivore,Invertivore,Insessorial,3
+Heterophasia desgodinsi,0.8,2,Forest,1,1,Omnivore,Invertivore,Insessorial,1
+Phylloscopus reguloides,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Cacomantis merulinus,0.8,5,Woodland,2,1,Carnivore,Invertivore,Insessorial,1
+Calliope calliope,0.8,5,Shrubland,2,3,Carnivore,Invertivore,Terrestrial,3
+Ficedula strophiata,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Emberiza schoeniclus,0.2,5,Wetland,2,2,Herbivore,Omnivore,Terrestrial,2
+Scolopax rusticola,0.2,8,Forest,3,3,Carnivore,Omnivore,Terrestrial,3
+Horornis diphone,0.8,2,Shrubland,1,1,Carnivore,Invertivore,Generalist,1
+Garrulax pectoralis,0.8,2,Forest,1,1,Carnivore,Invertivore,Terrestrial,1
+Hydroprogne caspia,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Aerial,3
+Bombycilla japonica,0.8,2,Forest,1,2,Omnivore,Frugivore,Insessorial,2
+Calidris acuminata,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Acridotheres tristis,0.2,8,Human Modified,3,2,Carnivore,Omnivore,Terrestrial,2
+Horornis acanthizoides,0.8,5,Shrubland,2,2,Carnivore,Invertivore,Generalist,2
+Rostratula benghalensis,0.8,2,Wetland,1,2,Omnivore,Aquatic predator,Terrestrial,2
+Carpodacus vinaceus,0.8,5,Forest,2,1,Herbivore,Granivore,Insessorial,1
+Parus major,0.8,5,Woodland,2,1,Omnivore,Invertivore,Insessorial,1
+Leucosticte brandti,0.8,8,Rock,3,2,Herbivore,Granivore,Terrestrial,2
+Dendrocopos leucotos,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Eophona personata,0.2,5,Forest,2,1,Herbivore,Omnivore,Insessorial,1
+Myiomela leucura,0.8,5,Forest,2,1,Omnivore,Invertivore,Generalist,1
+Pteruthius aeralatus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Urosphena squameiceps,0.8,2,Forest,1,3,Carnivore,Invertivore,Terrestrial,3
+Psilopogon faber,0.8,2,Forest,1,1,Herbivore,Frugivore,Insessorial,1
+Xenus cinereus,0.8,8,Grassland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Aegithalos caudatus,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Pterorhinus davidi,0.8,5,NA,NA,NA,NA,NA,NA,2
+Amaurornis akool,0.8,5,NA,NA,NA,NA,NA,NA,2
+Montifringilla adamsi,0.8,8,Desert,3,2,Herbivore,Granivore,Terrestrial,2
+Haliaeetus albicilla,0.8,8,Rock,3,2,Carnivore,Aquatic predator,Aerial,2
+Panurus biarmicus,0.8,8,Wetland,3,2,Omnivore,Invertivore,Insessorial,2
+Buteo rufinus,0.8,8,Grassland,3,3,Carnivore,Vertivore,Generalist,3
+Babax lanceolatus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Prunella collaris,0.8,8,Grassland,3,2,Carnivore,Invertivore,Terrestrial,2
+Mergus squamatus,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Aquatic,3
+Prinia superciliaris,0.8,5,Grassland,2,1,Carnivore,Invertivore,Insessorial,1
+Perdix hodgsoniae,0.2,8,Grassland,3,2,Omnivore,Omnivore,Terrestrial,2
+Pericrocotus brevirostris,0.8,2,Woodland,1,1,Carnivore,Invertivore,Insessorial,1
+Prunella montanella,0.8,5,Forest,2,3,Carnivore,Invertivore,Terrestrial,3
+Certhia familiaris,0.8,2,Forest,1,1,Omnivore,Invertivore,Insessorial,1
+Parus spilonotus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Emberiza aureola,0.2,5,Shrubland,2,3,Omnivore,Omnivore,Generalist,3
+Seicercus valentini,0.8,5,NA,NA,NA,NA,NA,NA,2
+Chloropsis lazulina,0.2,2,Shrubland,1,3,Omnivore,Omnivore,Insessorial,3
+Ithaginis cruentus,0.2,5,Shrubland,2,1,Herbivore,Omnivore,Terrestrial,1
+Cyanistes cyanus,0.8,5,Forest,2,2,Omnivore,Invertivore,Insessorial,2
+Columba leuconota,0.8,8,Rock,3,1,Herbivore,Granivore,Terrestrial,1
+Nisaetus nipalensis,0.8,2,Forest,1,1,Carnivore,Vertivore,Insessorial,1
+Chloris ambigua,0.8,5,Woodland,2,1,Herbivore,Granivore,Insessorial,1
+Grus virgo,0.8,5,NA,NA,NA,NA,NA,NA,2
+Ictinaetus malayensis,0.8,5,NA,NA,NA,NA,NA,NA,2
+Alectoris chukar,0.8,8,Shrubland,3,1,Herbivore,Granivore,Terrestrial,1
+Ibidorhyncha struthersii,0.8,8,Riverine,3,2,Carnivore,Aquatic predator,Terrestrial,2
+Lanius phoenicuroides,0.8,5,Shrubland,2,3,Carnivore,Invertivore,Insessorial,3
+Turdus merula,0.2,5,Forest,2,1,Omnivore,Omnivore,Generalist,1
+Phylloscopus goodsoni,0.8,5,Forest,2,3,Carnivore,Invertivore,Insessorial,3
+Chrysolophus pictus,0.8,2,Forest,1,1,Herbivore,Herbivore terrestrial,Terrestrial,1
+Pterorhinus pectoralis,0.8,5,NA,NA,NA,NA,NA,NA,2
+Agropsar sturninus,0.8,5,Forest,2,3,Omnivore,Invertivore,Generalist,3
+Sylviparus modestus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Falco columbarius,0.8,8,Woodland,3,3,Carnivore,Vertivore,Aerial,3
+Aegithalos iouschistos,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Ictinaetus malaiensis,0.8,2,Forest,1,1,Carnivore,Vertivore,Aerial,1
+Poecile weigoldicus,0.8,2,Forest,1,1,Omnivore,Invertivore,Insessorial,1
+Certhia hodgsoni,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Phylloscopus maculipennis,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Fulvetta cinereiceps,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Terpsiphone paradisi,0.8,5,Woodland,2,2,Carnivore,Invertivore,Insessorial,2
+Asio otus,0.8,5,Forest,2,2,Carnivore,Vertivore,Aerial,2
+Falco naumanni,0.8,8,Grassland,3,3,Carnivore,Invertivore,Generalist,3
+Hodgsonius phoenicuroides,0.8,5,NA,NA,NA,NA,NA,NA,2
+Trochalopteron affine,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Generalist,1
+Asio flammeus,0.8,8,Grassland,3,3,Carnivore,Vertivore,Aerial,3
+Turdus dissimilis,0.8,2,Forest,1,1,Omnivore,Invertivore,Generalist,1
+Muscicapa ferruginea,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Niltava sundara,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Lioparus chrysotis,0.8,2,Forest,1,1,Omnivore,Invertivore,Insessorial,1
+Arenaria interpres,0.8,8,Coastal,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Erythrogenys gravivox,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Terrestrial,1
+Emberiza siemsseni,0.8,5,Shrubland,2,3,Omnivore,Invertivore,Terrestrial,3
+Harpactes erythrocephalus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Ficedula tricolor,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Minla ignotincta,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Phylloscopus castaniceps,0.8,2,Forest,1,2,Carnivore,Invertivore,Insessorial,2
+Carpodacus rubicilla,0.2,8,Rock,3,1,Herbivore,Omnivore,Terrestrial,1
+Pteruthius xanthochlorus,0.8,2,Forest,1,1,Omnivore,Invertivore,Insessorial,1
+Dryobates cathpharius,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Phylloscopus ogilviegranti,0.8,5,Forest,2,2,Carnivore,Invertivore,Insessorial,2
+Sinosuthora alphonsiana,0.2,5,Shrubland,2,1,Herbivore,Omnivore,Insessorial,1
+Anthus godlewskii,0.8,8,Rock,3,3,Carnivore,Invertivore,Terrestrial,3
+Mergus serrator,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Aquatic,3
+Niltava davidi,0.2,2,Forest,1,3,Omnivore,Omnivore,Insessorial,3
+Numenius madagascariensis,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Sturnia sinensis,0.8,5,Grassland,2,3,Carnivore,Invertivore,Generalist,3
+Merops viridis,0.8,5,Woodland,2,1,Carnivore,Invertivore,Insessorial,1
+Garrulax maximus,0.8,5,Forest,2,1,Carnivore,Invertivore,Terrestrial,1
+Fringilla coelebs,0.8,5,Forest,2,2,Omnivore,Invertivore,Generalist,2
+Garrulax monileger,0.8,2,Forest,1,1,Carnivore,Invertivore,Generalist,1
+Hypothymis azurea,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Melanocorypha maxima,0.2,8,Grassland,3,2,Herbivore,Omnivore,Terrestrial,2
+Prunella immaculata,0.2,2,Forest,1,2,Omnivore,Omnivore,Terrestrial,2
+Turdus boulboul,0.8,2,Forest,1,2,Omnivore,Invertivore,Insessorial,2
+Aythya marila,0.8,8,Wetland,3,3,Omnivore,Aquatic predator,Aquatic,3
+Fulvetta ruficapilla,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Perdix dauurica,0.2,8,Grassland,3,1,Herbivore,Omnivore,Terrestrial,1
+Calandrella acutirostris,0.2,8,Grassland,3,3,Omnivore,Omnivore,Terrestrial,3
+Turdus viscivorus,0.2,5,Forest,2,1,Omnivore,Omnivore,Insessorial,1
+Emberiza yessoensis,0.8,5,Wetland,2,3,Herbivore,Granivore,Terrestrial,3
+Poecile superciliosus,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Insessorial,1
+Seicercus tephrocephalus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Dicaeum minullum,0.2,2,Forest,1,1,Herbivore,Omnivore,Insessorial,1
+Yuhina gularis,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Locustella lanceolata,0.8,5,Grassland,2,3,Carnivore,Invertivore,Generalist,3
+Platalea minor,0.8,8,Coastal,3,2,Carnivore,Aquatic predator,Terrestrial,2
+Cyornis hainanus,0.8,2,Forest,1,2,Carnivore,Invertivore,Insessorial,2
+Enicurus maculatus,0.8,2,Wetland,1,1,Carnivore,Aquatic predator,Terrestrial,1
+Grus vipio,0.8,5,NA,NA,NA,NA,NA,NA,2
+Limosa lapponica,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Brachypteryx leucophris,0.8,2,Forest,1,2,Carnivore,Invertivore,Terrestrial,2
+Calidris pugnax,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Carduelis carduelis,0.8,5,Woodland,2,1,Herbivore,Granivore,Insessorial,1
+Ixobrychus eurhythmus,0.8,2,Wetland,1,3,Carnivore,Aquatic predator,Terrestrial,3
+Pucrasia macrolopha,0.2,2,Forest,1,1,Herbivore,Omnivore,Terrestrial,1
+Surniculus lugubris,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Syrrhaptes paradoxus,0.8,8,Grassland,3,2,Herbivore,Granivore,Terrestrial,2
+Emberiza lathami,0.8,8,Grassland,3,2,Herbivore,Granivore,Terrestrial,2
+Muscicapa muttui,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Fulvetta vinipectus,0.8,2,Shrubland,1,1,Carnivore,Invertivore,Insessorial,1
+Parayuhina diademata,0.8,5,NA,NA,NA,NA,NA,NA,2
+Strix nivicolum,0.8,2,Forest,1,1,Carnivore,Vertivore,Insessorial,1
+Gallinago stenura,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Phyllergates cuculatus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Prinia hodgsonii,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Insessorial,1
+Columba hodgsonii,0.8,5,Forest,2,1,Herbivore,Frugivore,Insessorial,1
+Tetraogallus tibetanus,0.8,8,Grassland,3,1,Herbivore,Herbivore terrestrial,Terrestrial,1
+Coracias garrulus,0.8,5,Woodland,2,3,Carnivore,Invertivore,Insessorial,3
+Montifringilla henrici,0.8,8,Rock,3,2,Herbivore,Granivore,Terrestrial,2
+Larus fuscus,0.8,8,Coastal,3,2,Carnivore,Aquatic predator,Generalist,2
+Luscinia cyane,0.8,5,NA,NA,NA,NA,NA,NA,2
+Psilopogon asiaticus,0.8,2,Forest,1,1,Herbivore,Frugivore,Insessorial,1
+Actinodura cyanouroptera,0.8,5,NA,NA,NA,NA,NA,NA,2
+Alcippe dubia,0.8,5,NA,NA,NA,NA,NA,NA,2
+Geokichla citrina,0.2,2,Forest,1,3,Omnivore,Omnivore,Generalist,3
+Passer ammodendri,0.8,8,Desert,3,1,Herbivore,Granivore,Terrestrial,1
+Poecile hypermelaenus,0.8,5,Forest,2,1,Omnivore,Invertivore,Insessorial,1
+Aegithalos fuliginosus,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Charadrius mongolus,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Pterorhinus lanceolatus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Monticola gularis,0.8,5,Forest,2,3,Carnivore,Invertivore,Terrestrial,3
+Iduna aedon,0.8,5,NA,NA,NA,NA,NA,NA,2
+Cyornis whitei,0.8,5,NA,NA,NA,NA,NA,NA,2
+Horornis flavolivaceus,0.8,5,Shrubland,2,2,Carnivore,Invertivore,Generalist,2
+Prinia striata,0.8,5,NA,NA,NA,NA,NA,NA,2
+Tarsiger chrysaeus,0.8,5,Forest,2,2,Carnivore,Invertivore,Terrestrial,2
+Niltava macgrigoriae,0.8,2,Forest,1,2,Carnivore,Invertivore,Insessorial,2
+Paradoxornis guttaticollis,0.2,5,Shrubland,2,2,Omnivore,Omnivore,Insessorial,2
+Chalcophaps indica,0.2,2,Forest,1,1,Herbivore,Omnivore,Generalist,1
+Calidris alba,0.8,8,Coastal,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Larus relictus,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Aerial,3
+Calidris tenuirostris,0.8,8,Grassland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Chelidorhynx hypoxantha,0.8,5,NA,NA,NA,NA,NA,NA,2
+Haematopus ostralegus,0.8,8,Coastal,3,1,Carnivore,Aquatic predator,Terrestrial,1
+Alcippe brunnea,0.8,5,NA,NA,NA,NA,NA,NA,2
+Calidris falcinellus,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Pyrgilauda blanfordi,0.8,8,Grassland,3,2,Herbivore,Granivore,Terrestrial,2
+Dryocopus martius,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Tragopan temminckii,0.8,2,Forest,1,1,Herbivore,Herbivore terrestrial,Generalist,1
+Carpodacus roseus,0.8,5,Forest,2,3,Herbivore,Granivore,Insessorial,3
+Cettia castaneocoronata,0.8,2,Forest,1,1,Carnivore,Invertivore,Terrestrial,1
+Monticola saxatilis,0.8,5,Rock,2,3,Carnivore,Invertivore,Insessorial,3
+Phylloscopus kansuensis,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Grus monacha,0.2,8,Wetland,3,3,Herbivore,Omnivore,Terrestrial,3
+Leptopoecile elegans,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Chloris chloris,0.8,5,Woodland,2,1,Herbivore,Granivore,Generalist,1
+Locustella certhiola,0.8,5,Shrubland,2,3,Carnivore,Invertivore,Insessorial,3
+Sylvia curruca,0.8,8,Shrubland,3,3,Omnivore,Invertivore,Insessorial,3
+Pomatorhinus swinhoei,0.8,5,NA,NA,NA,NA,NA,NA,2
+Rhodospiza obsoleta,0.8,8,Desert,3,2,Herbivore,Granivore,Generalist,2
+Dicrurus aeneus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Ninox japonica,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Otus spilocephalus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Phylloscopus occisinensis,0.8,5,NA,NA,NA,NA,NA,NA,2
+Tringa brevipes,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Cuculus optatus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Emberiza yunnanensis,0.8,5,NA,NA,NA,NA,NA,NA,2
+Limnodromus semipalmatus,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Gallinago megala,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Geokichla sibirica,0.8,2,Forest,1,3,Omnivore,Invertivore,Terrestrial,3
+Locustella luteoventris,0.8,2,Shrubland,1,2,Carnivore,Invertivore,Generalist,2
+Buteo lagopus,0.8,8,Grassland,3,3,Carnivore,Vertivore,Insessorial,3
+Bucanetes mongolicus,0.8,8,Desert,3,2,Herbivore,Granivore,Terrestrial,2
+Calandrella brachydactyla,0.2,8,Grassland,3,2,Omnivore,Omnivore,Terrestrial,2
+Cygnus olor,0.8,8,Wetland,3,3,Herbivore,Herbivore aquatic,Aquatic,3
+Nettapus coromandelianus,0.8,8,Wetland,3,1,Herbivore,Herbivore aquatic,Aquatic,1
+Calidris minuta,0.8,8,Grassland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Crossoptilon crossoptilon,0.8,2,Forest,1,1,Herbivore,Herbivore terrestrial,Terrestrial,1
+Egretta eulophotes,0.8,8,Coastal,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Aethopyga saturata,0.8,2,Forest,1,1,Herbivore,Nectarivore,Insessorial,1
+Phylloscopus valentini,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Erythrogenys swinhoei,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Terrestrial,1
+Certhia himalayana,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Dicaeum cruentatum,0.2,2,Forest,1,1,Herbivore,Omnivore,Insessorial,1
+Elachura formosa,0.8,2,Grassland,1,1,Carnivore,Invertivore,Insessorial,1
+Yuhina occipitalis,0.8,2,Forest,1,1,Omnivore,Invertivore,Insessorial,1
+Arundinax aedon,0.8,8,Shrubland,3,3,Carnivore,Invertivore,Insessorial,3
+Locustella mandelli,0.8,5,Shrubland,2,2,Carnivore,Invertivore,Generalist,2
+Fulvetta striaticollis,0.8,2,Shrubland,1,1,Carnivore,Invertivore,Insessorial,1
+Larus cachinnans,0.2,8,Coastal,3,3,Carnivore,Omnivore,Generalist,3
+Machlolophus spilonotus,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Clanga clanga,0.8,8,Wetland,3,3,Carnivore,Vertivore,Generalist,3
+Micropternus brachyurus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Aquila fasciata,0.8,8,Rock,3,2,Carnivore,Vertivore,Aerial,2
+Spizixos canifrons,0.2,5,Shrubland,2,1,Herbivore,Omnivore,Insessorial,1
+Ficedula narcissina,0.8,5,Forest,2,3,Carnivore,Invertivore,Insessorial,3
+Cephalopyrus flammiceps,0.8,2,Forest,1,2,Omnivore,Invertivore,Insessorial,2
+Merops apiaster,0.8,5,Woodland,2,3,Carnivore,Invertivore,Insessorial,3
+Motacilla flava,0.8,8,Grassland,3,3,Carnivore,Invertivore,Terrestrial,3
+Paradoxornis heudei,0.8,8,Wetland,3,2,Carnivore,Invertivore,Insessorial,2
+Podoces hendersoni,0.2,8,Desert,3,2,Omnivore,Omnivore,Terrestrial,2
+Arachnothera magna,0.2,2,Forest,1,1,Omnivore,Omnivore,Insessorial,1
+Alcippe fratercula,0.8,5,NA,NA,NA,NA,NA,NA,2
+Anthus campestris,0.8,8,Grassland,3,3,Carnivore,Invertivore,Terrestrial,3
+Hypsipetes amaurotis,0.8,5,Forest,2,2,Herbivore,Frugivore,Insessorial,2
+Aquila heliaca,0.8,2,Woodland,1,3,Carnivore,Vertivore,Generalist,3
+Buteo buteo,0.8,8,Grassland,3,2,Carnivore,Vertivore,Insessorial,2
+Linaria cannabina,0.8,5,Shrubland,2,1,Herbivore,Granivore,Terrestrial,1
+Pycnonotus cafer,0.2,5,Shrubland,2,1,Herbivore,Omnivore,Insessorial,1
+Grus japonensis,0.2,8,Wetland,3,3,Omnivore,Omnivore,Terrestrial,3
+Ixobrychus flavicollis,0.8,2,Wetland,1,1,Carnivore,Aquatic predator,Terrestrial,1
+Otis tarda,0.2,8,Grassland,3,2,Omnivore,Omnivore,Terrestrial,2
+Calidris canutus,0.8,8,Coastal,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Schoeniparus brunneus,0.8,2,Forest,1,1,Carnivore,Invertivore,Generalist,1
+Artamus fuscus,0.8,5,Woodland,2,1,Carnivore,Invertivore,Aerial,1
+Chrysolophus amherstiae,0.2,2,Forest,1,1,Omnivore,Omnivore,Terrestrial,1
+Ficedula hyperythra,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Rhopodytes tristis,0.8,5,NA,NA,NA,NA,NA,NA,2
+Anser erythropus,0.8,8,Grassland,3,3,Herbivore,Herbivore terrestrial,Terrestrial,3
+Phalaropus lobatus,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Tarsiger indicus,0.8,2,Forest,1,1,Carnivore,Invertivore,Terrestrial,1
+Locustella thoracica,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Generalist,1
+Numenius minutus,0.8,8,Grassland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Alophoixus pallidus,0.8,5,Forest,2,1,Herbivore,Frugivore,Insessorial,1
+Luscinia megarhynchos,0.8,2,Woodland,1,3,Carnivore,Invertivore,Generalist,3
+Pastor roseus,0.2,8,Grassland,3,3,Omnivore,Omnivore,Insessorial,3
+Procarduelis nipalensis,0.8,5,Forest,2,2,Herbivore,Granivore,Generalist,2
+Sitta przewalskii,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Accipiter badius,0.8,5,Shrubland,2,3,Carnivore,Vertivore,Insessorial,3
+Aethopyga siparaja,0.8,5,Forest,2,1,Herbivore,Nectarivore,Insessorial,1
+Columba oenas,0.2,8,Woodland,3,1,Herbivore,Omnivore,Terrestrial,1
+Ianthocincla maxima,0.8,5,NA,NA,NA,NA,NA,NA,2
+Lanius giganteus,0.8,8,Grassland,3,2,Carnivore,Invertivore,Insessorial,2
+Carpodacus davidianus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Chroicocephalus saundersi,0.8,5,NA,NA,NA,NA,NA,NA,2
+Locustella davidi,0.8,5,Shrubland,2,3,Carnivore,Invertivore,Generalist,3
+Phylloscopus collybita,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Pyrrhula nipalensis,0.2,2,Forest,1,1,Herbivore,Omnivore,Insessorial,1
+Minla strigula,0.8,5,NA,NA,NA,NA,NA,NA,2
+Hemipus picatus,0.8,2,Shrubland,1,1,Carnivore,Invertivore,Insessorial,1
+Acanthis flammea,0.8,2,Forest,1,2,Herbivore,Granivore,Generalist,2
+Crossoptilon auritum,0.2,2,Forest,1,1,Herbivore,Omnivore,Terrestrial,1
+Larvivora cyane,0.8,5,Forest,2,3,Carnivore,Invertivore,Generalist,3
+Cypsiurus balasiensis,0.8,2,Human Modified,1,1,Carnivore,Invertivore,Aerial,1
+Pycnonotus flaviventris,0.8,5,NA,NA,NA,NA,NA,NA,2
+Francolinus pintadeanus,0.2,5,Forest,2,1,Herbivore,Omnivore,Terrestrial,1
+Helopsaltes certhiola,0.8,5,NA,NA,NA,NA,NA,NA,2
+Spinus thibetanus,0.8,2,Forest,1,2,Herbivore,Granivore,Generalist,2
+Yuhina flavicollis,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Zoothera dixoni,0.8,2,Forest,1,1,Carnivore,Invertivore,Terrestrial,1
+Carpodacus trifasciatus,0.8,2,Forest,1,1,Herbivore,Granivore,Insessorial,1
+Dendrocopos darjellensis,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Luscinia phaenicuroides,0.8,5,NA,NA,NA,NA,NA,NA,2
+Mycerobas affinis,0.2,2,Forest,1,2,Herbivore,Omnivore,Insessorial,2
+Anthus trivialis,0.8,5,Woodland,2,3,Omnivore,Invertivore,Terrestrial,3
+Podiceps auritus,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Aquatic,3
+Saundersilarus saundersi,0.8,8,Coastal,3,3,Carnivore,Aquatic predator,Generalist,3
+Calcarius lapponicus,0.8,8,Grassland,3,3,Herbivore,Granivore,Terrestrial,3
+Charadrius atrifrons,0.8,5,NA,NA,NA,NA,NA,NA,2
+Gallicrex cinerea,0.2,5,Wetland,2,2,Herbivore,Omnivore,Terrestrial,2
+Macropygia unchall,0.2,2,Forest,1,1,Herbivore,Omnivore,Insessorial,1
+Prinia rufescens,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Insessorial,1
+Treron sphenurus,0.8,2,Forest,1,2,Herbivore,Frugivore,Insessorial,2
+Muscicapa striata,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Cyornis glaucicomans,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Ficedula elisae,0.8,5,Forest,2,3,Carnivore,Invertivore,Insessorial,3
+Pericrocotus roseus,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Arborophila gingica,0.2,2,Woodland,1,1,Herbivore,Omnivore,Terrestrial,1
+Pyrrhula pyrrhula,0.2,5,Forest,2,1,Herbivore,Omnivore,Insessorial,1
+Charadrius veredus,0.2,8,Wetland,3,3,Carnivore,Omnivore,Terrestrial,3
+Strix leptogrammica,0.8,2,Forest,1,1,Carnivore,Vertivore,Insessorial,1
+Copsychus malabaricus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Tephrodornis virgatus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Carpodacus puniceus,0.2,8,Grassland,3,2,Herbivore,Omnivore,Terrestrial,2
+Lanius collurioides,0.8,5,Shrubland,2,2,Carnivore,Invertivore,Insessorial,2
+Phylloscopus tephrocephalus,0.8,2,Forest,1,2,Carnivore,Invertivore,Insessorial,2
+Abroscopus superciliaris,0.8,2,Shrubland,1,1,Carnivore,Invertivore,Insessorial,1
+Aviceda jerdoni,0.2,5,Forest,2,1,Carnivore,Omnivore,Insessorial,1
+Dryobates minor,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Melanocorypha mongolica,0.2,8,Grassland,3,2,Omnivore,Omnivore,Terrestrial,2
+Picoides tridactylus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Seicercus omeiensis,0.8,5,NA,NA,NA,NA,NA,NA,2
+Sitta frontalis,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Acrocephalus arundinaceus,0.8,8,Wetland,3,3,Carnivore,Invertivore,Insessorial,3
+Merops philippinus,0.8,5,Wetland,2,3,Carnivore,Invertivore,Insessorial,3
+Turdus maximus,0.2,5,Forest,2,1,Omnivore,Omnivore,Generalist,1
+Curruca curruca,0.8,5,NA,NA,NA,NA,NA,NA,2
+Oriolus traillii,0.2,2,Forest,1,1,Herbivore,Omnivore,Insessorial,1
+Suthora verreauxi,0.8,2,Forest,1,1,Omnivore,Invertivore,Insessorial,1
+Dendrocopos leucopterus,0.8,5,Woodland,2,1,Carnivore,Invertivore,Insessorial,1
+Garrulax albogularis,0.8,2,Forest,1,1,Omnivore,Invertivore,Generalist,1
+Neosuthora davidiana,0.2,5,Forest,2,1,Omnivore,Omnivore,Insessorial,1
+Melanochlora sultanea,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Phylloscopus intensior,0.8,5,Forest,2,2,Carnivore,Invertivore,Insessorial,2
+Zapornia fusca,0.8,5,Wetland,2,2,Omnivore,Aquatic predator,Terrestrial,2
+Garrulax ocellatus,0.2,2,Forest,1,1,Omnivore,Omnivore,Insessorial,1
+Serinus pusillus,0.8,2,Rock,1,2,Herbivore,Granivore,Terrestrial,2
+Alectoris magna,0.8,8,Rock,3,1,Herbivore,Herbivore terrestrial,Terrestrial,1
+Seicercus soror,0.8,5,NA,NA,NA,NA,NA,NA,2
+Sinosuthora conspicillata,0.2,5,Forest,2,1,Omnivore,Omnivore,Insessorial,1
+Acrocephalus agricola,0.8,8,Wetland,3,3,Carnivore,Invertivore,Insessorial,3
+Calliope tschebaiewi,0.8,5,Grassland,2,2,Carnivore,Invertivore,Terrestrial,2
+Seicercus affinis,0.8,5,NA,NA,NA,NA,NA,NA,2
+Saxicola caprata,0.8,5,Shrubland,2,3,Carnivore,Invertivore,Insessorial,3
+Trochalopteron henrici,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Terrestrial,1
+Phoenicurus erythronotus,0.8,5,Woodland,2,3,Omnivore,Invertivore,Insessorial,3
+Grus leucogeranus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Dupetor flavicollis,0.8,5,NA,NA,NA,NA,NA,NA,2
+Cecropis striolata,0.8,5,NA,NA,NA,NA,NA,NA,2
+Cettia brunnifrons,0.8,5,Shrubland,2,2,Carnivore,Invertivore,Generalist,2
+Ficedula westermanni,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Pnoepyga albiventer,0.8,2,Forest,1,1,Omnivore,Invertivore,Generalist,1
+Pelecanus crispus,0.8,8,Wetland,3,2,Carnivore,Aquatic predator,Aquatic,2
+Aquila clanga,0.8,5,NA,NA,NA,NA,NA,NA,2
+Anthus rufulus,0.8,8,Grassland,3,1,Carnivore,Invertivore,Terrestrial,1
+Circaetus gallicus,0.8,8,Woodland,3,3,Carnivore,Vertivore,Aerial,3
+Phoenicurus alaschanicus,0.8,5,Shrubland,2,3,Carnivore,Invertivore,Insessorial,3
+Pterorhinus chinensis,0.8,5,NA,NA,NA,NA,NA,NA,2
+Anthus gustavi,0.8,8,Shrubland,3,3,Carnivore,Invertivore,Terrestrial,3
+Curruca communis,0.8,5,NA,NA,NA,NA,NA,NA,2
+Leucogeranus leucogeranus,0.2,8,Wetland,3,3,Omnivore,Omnivore,Terrestrial,3
+Pterorhinus berthemyi,0.8,5,NA,NA,NA,NA,NA,NA,2
+Tesia cyaniventer,0.8,2,Forest,1,1,Carnivore,Invertivore,Generalist,1
+Coracina macei,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Gallus gallus,0.2,2,Forest,1,1,Herbivore,Omnivore,Terrestrial,1
+Urocynchramus pylzowi,0.8,5,Shrubland,2,1,Herbivore,Granivore,Generalist,1
+Niltava grandis,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Sasia ochracea,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Conostoma aemodium,0.2,5,Shrubland,2,1,Herbivore,Omnivore,Insessorial,1
+Syrmaticus ellioti,0.2,2,Woodland,1,1,Herbivore,Omnivore,Terrestrial,1
+Lanius excubitor,0.8,8,Shrubland,3,3,Carnivore,Vertivore,Insessorial,3
+Phyllergates cucullatus,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Insessorial,1
+Phylloscopus emeiensis,0.8,5,Forest,2,2,Carnivore,Invertivore,Insessorial,2
+Carpodacus subhimachalus,0.2,5,Shrubland,2,2,Herbivore,Omnivore,Insessorial,2
+Certhia tianquanensis,0.8,2,Forest,1,1,Omnivore,Invertivore,Insessorial,1
+Emberiza bruniceps,0.2,8,Grassland,3,3,Omnivore,Omnivore,Terrestrial,3
+Phylloscopus soror,0.8,2,Forest,1,3,Carnivore,Invertivore,Insessorial,3
+Abroscopus schisticeps,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Aethopyga nipalensis,0.8,2,Forest,1,1,Omnivore,Nectarivore,Insessorial,1
+Ixobrychus minutus,0.8,2,Wetland,1,3,Carnivore,Aquatic predator,Terrestrial,3
+Cygnus atratus,0.8,8,Wetland,3,2,Herbivore,Herbivore aquatic,Aquatic,2
+Porzana fusca,0.8,5,NA,NA,NA,NA,NA,NA,2
+Stachyris nigriceps,0.8,2,Shrubland,1,1,Carnivore,Invertivore,Insessorial,1
+Lanius collurio,0.8,8,Woodland,3,3,Carnivore,Invertivore,Insessorial,3
+Luscinia brunnea,0.8,5,NA,NA,NA,NA,NA,NA,2
+Psarisomus dalhousiae,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Terpsiphone atrocaudata,0.8,5,Forest,2,3,Carnivore,Invertivore,Insessorial,3
+Ianthocincla lunulata,0.8,5,NA,NA,NA,NA,NA,NA,2
+Lanius borealis,0.8,8,Shrubland,3,3,Carnivore,Vertivore,Insessorial,3
+Acrocephalus dumetorum,0.8,5,Wetland,2,3,Carnivore,Invertivore,Insessorial,3
+Staphida castaniceps,0.8,5,NA,NA,NA,NA,NA,NA,2
+Trochalopteron milnei,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Ianthocincla cineracea,0.8,5,NA,NA,NA,NA,NA,NA,2
+Ianthocincla ocellata,0.8,5,NA,NA,NA,NA,NA,NA,2
+Dicaeum melanozanthum,0.8,5,Forest,2,1,Carnivore,Invertivore,Insessorial,1
+Phoenicurus phoenicurus,0.8,2,Woodland,1,3,Carnivore,Invertivore,Insessorial,3
+Riparia chinensis,0.8,8,Wetland,3,2,Carnivore,Invertivore,Aerial,2
+Streptopelia turtur,0.8,5,Woodland,2,3,Herbivore,Granivore,Terrestrial,3
+Turdus feae,0.2,2,Forest,1,3,Omnivore,Omnivore,Generalist,3
+Nyctyornis athertoni,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Phylloscopus intermedius,0.8,2,Forest,1,2,Carnivore,Invertivore,Insessorial,2
+Psilopogon franklinii,0.8,2,Forest,1,1,Herbivore,Frugivore,Insessorial,1
+Fulvetta manipurensis,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Grandala coelicolor,0.8,8,Rock,3,2,Omnivore,Invertivore,Generalist,2
+Carpodacus verreauxii,0.8,5,Shrubland,2,2,Herbivore,Granivore,Generalist,2
+Emberiza cia,0.2,8,Rock,3,2,Omnivore,Omnivore,Terrestrial,2
+Poecile davidi,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Rallus aquaticus,0.8,2,Wetland,1,2,Carnivore,Aquatic predator,Terrestrial,2
+Sylvia communis,0.8,8,Shrubland,3,3,Omnivore,Invertivore,Insessorial,3
+Carpodacus edwardsii,0.8,5,Forest,2,2,Herbivore,Granivore,Terrestrial,2
+Circus aeruginosus,0.8,8,Wetland,3,2,Carnivore,Vertivore,Aerial,2
+Carpodacus lepidus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Emberiza buchanani,0.8,8,Rock,3,3,Omnivore,Granivore,Terrestrial,3
+Hemixos flavala,0.2,2,Forest,1,2,Omnivore,Omnivore,Insessorial,2
+Pterorhinus albogularis,0.8,5,NA,NA,NA,NA,NA,NA,2
+Sitta yunnanensis,0.8,2,Woodland,1,1,Carnivore,Invertivore,Insessorial,1
+Sturnia malabarica,0.2,5,Woodland,2,2,Herbivore,Omnivore,Insessorial,2
+Treron sieboldii,0.8,5,Forest,2,2,Herbivore,Frugivore,Insessorial,2
+Locustella chengi,0.8,5,NA,2,2,Carnivore,Invertivore,Insessorial,2
+Rhinomyias brunneatus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Lanius minor,0.8,8,Grassland,3,3,Carnivore,Invertivore,Insessorial,3
+Cyanoptila cumatilis,0.8,2,Forest,1,3,Carnivore,Invertivore,Terrestrial,3
+Trochalopteron formosum,0.8,2,Forest,1,1,Carnivore,Invertivore,Generalist,1
+Turdus albocinctus,0.8,2,Forest,1,2,Omnivore,Invertivore,Insessorial,2
+Iduna caligata,0.8,5,Shrubland,2,3,Carnivore,Invertivore,Insessorial,3
+Remiz coronatus,0.8,5,Riverine,2,3,Omnivore,Invertivore,Insessorial,3
+Sitta himalayensis,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Tetrastes sewerzowi,0.8,5,NA,NA,NA,NA,NA,NA,2
+Zoothera dauma,0.8,2,Forest,1,3,Carnivore,Invertivore,Generalist,3
+Zoothera mollissima,0.8,5,Shrubland,2,1,Omnivore,Invertivore,Terrestrial,1
+Tragopan caboti,0.2,2,Woodland,1,1,Herbivore,Omnivore,Generalist,1
+Turnix tanki,0.8,8,Grassland,3,1,Herbivore,Granivore,Terrestrial,1
+Chrysococcyx maculatus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Prunella atrogularis,0.8,5,Shrubland,2,3,Carnivore,Invertivore,Terrestrial,3
+Pteruthius melanotis,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Stachyridopsis chrysaea,0.8,5,NA,NA,NA,NA,NA,NA,2
+Aethopyga ignicauda,0.8,2,Forest,1,1,Omnivore,Nectarivore,Insessorial,1
+Chrysophlegma flavinucha,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Urocissa flavirostris,0.2,2,Forest,1,1,Carnivore,Omnivore,Insessorial,1
+Actinodura egertoni,0.8,2,Shrubland,1,1,Omnivore,Invertivore,Insessorial,1
+Cinnyris jugularis,0.2,5,Shrubland,2,1,Omnivore,Omnivore,Insessorial,1
+Pitta nympha,0.8,2,Forest,1,3,Carnivore,Invertivore,Terrestrial,3
+Pycnonotus flavescens,0.2,5,Forest,2,1,Omnivore,Omnivore,Insessorial,1
+Tyto longimembris,0.8,8,Grassland,3,1,Carnivore,Vertivore,Aerial,1
+Cisticola exilis,0.8,5,Grassland,2,1,Carnivore,Invertivore,Terrestrial,1
+Macronus gularis,0.8,5,NA,NA,NA,NA,NA,NA,2
+Tringa guttifer,0.8,8,Coastal,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Corvus monedula,0.2,8,Human Modified,3,2,Omnivore,Omnivore,Terrestrial,2
+Cyornis brunneatus,0.8,5,Forest,2,3,Carnivore,Invertivore,Insessorial,3
+Passer hispaniolensis,0.8,5,Shrubland,2,1,Herbivore,Granivore,Terrestrial,1
+Charadrius dealbatus,0.8,8,Coastal,3,2,Carnivore,Aquatic predator,Terrestrial,2
+Oriolus oriolus,0.2,2,Woodland,1,3,Omnivore,Omnivore,Insessorial,3
+Gallinago solitaria,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Terrestrial,3
+Picus chlorolophus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Pyrgilauda davidiana,0.8,8,Grassland,3,2,Herbivore,Granivore,Terrestrial,2
+Spilopelia senegalensis,0.8,8,Woodland,3,1,Herbivore,Granivore,Terrestrial,1
+Turdus pilaris,0.8,2,Forest,1,3,Carnivore,Invertivore,Generalist,3
+Alcippe castaneceps,0.8,5,NA,NA,NA,NA,NA,NA,2
+Curruca minula,0.8,5,NA,NA,NA,NA,NA,NA,2
+Emberiza hortulana,0.2,5,Shrubland,2,3,Omnivore,Omnivore,Generalist,3
+Chlidonias niger,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Aerial,3
+Haliaeetus leucoryphus,0.8,8,Wetland,3,3,Carnivore,Aquatic predator,Aerial,3
+Zapornia pusilla,0.8,2,Wetland,1,3,Carnivore,Aquatic predator,Terrestrial,3
+Caprimulgus europaeus,0.8,5,Shrubland,2,3,Carnivore,Invertivore,Aerial,3
+Cyornis unicolor,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Cettia major,0.8,2,Forest,1,1,Carnivore,Invertivore,Generalist,1
+Dicrurus paradiseus,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Acrocephalus concinens,0.8,5,Wetland,2,2,Carnivore,Invertivore,Insessorial,2
+Carpodacus roborowskii,0.8,8,Grassland,3,1,Herbivore,Granivore,Terrestrial,1
+Timalia pileata,0.8,2,Shrubland,1,1,Carnivore,Invertivore,Insessorial,1
+Psilopogon haemacephalus,0.8,5,Woodland,2,1,Omnivore,Frugivore,Insessorial,1
+Pycnonotus striatus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Tetraophasis obscurus,0.8,5,Forest,2,1,Herbivore,Herbivore terrestrial,Terrestrial,1
+Dicrurus remifer,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1
+Suthora fulvifrons,0.2,2,Forest,1,1,Herbivore,Omnivore,Insessorial,1
+Tetraophasis szechenyii,0.8,5,Forest,2,1,Herbivore,Herbivore terrestrial,Terrestrial,1
+Dicrurus annectens,0.8,5,Forest,2,3,Carnivore,Invertivore,Insessorial,3
+Nipponia nippon,0.8,5,Wetland,2,1,Carnivore,Aquatic predator,Terrestrial,1
+Pellorneum ruficeps,0.8,5,Shrubland,2,1,Carnivore,Invertivore,Terrestrial,1
+Brachypteryx montana,0.8,2,Forest,1,1,Carnivore,Invertivore,Terrestrial,1
+Cholornis unicolor,0.2,5,Shrubland,2,1,Herbivore,Omnivore,Insessorial,1
+Phylloscopus chloronotus,0.8,5,Forest,2,3,Carnivore,Invertivore,Insessorial,3
+Phylloscopus fuligiventer,0.8,5,Shrubland,2,2,Carnivore,Invertivore,Insessorial,2
+Tetrastes bonasia,0.8,5,NA,NA,NA,NA,NA,NA,2
+Thalasseus bergii,0.8,8,Coastal,3,3,Carnivore,Aquatic predator,Aerial,3
+Gallirallus striatus,0.8,5,NA,NA,NA,NA,NA,NA,2
+Otus scops,0.8,5,Woodland,2,3,Carnivore,Invertivore,Insessorial,3
+Phaenicophaeus tristis,0.8,2,Forest,1,1,Carnivore,Invertivore,Insessorial,1

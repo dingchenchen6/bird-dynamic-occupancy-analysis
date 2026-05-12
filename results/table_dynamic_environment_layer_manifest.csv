@@ -1,0 +1,7 @@
+layer_group,status,detail
+climate,available,wc2.1_10m_bio_1.tif; wc2.1_10m_bio_10.tif; wc2.1_10m_bio_11.tif; wc2.1_10m_bio_12.tif; wc2.1_10m_bio_13.tif; wc2.1_10m_bio_14.tif; wc2.1_10m_bio_15.tif; wc2.1_10m_bio_16.tif; wc2.1_10m_bio_17.tif; wc2.1_10m_bio_18.tif; wc2.1_10m_bio_19.tif; wc2.1_10m_bio_2.tif; wc2.1_10m_bio_3.tif; wc2.1_10m_bio_4.tif; wc2.1_10m_bio_5.tif; wc2.1_10m_bio_6.tif; wc2.1_10m_bio_7.tif; wc2.1_10m_bio_8.tif; wc2.1_10m_bio_9.tif
+topography,available,wc2.1_10m_elev.tif
+texture,available,shannon_01_05_5km_uint16.tif; Entropy_01_05_5km_uint16.tif; Contrast_01_05_5km_uint32.tif
+productivity,available,npp_mean_china.tif
+landcover,available,WorldCover_trees_30s.tif; WorldCover_cropland_30s.tif; WorldCover_built_30s.tif; WorldCover_shrubs_30s.tif; WorldCover_grassland_30s.tif; WorldCover_water_30s.tif
+human_footprint,available,/Users/dingchenchen/Documents/New project/bird_dynamic_occupancy_analysis/data/external/hfi

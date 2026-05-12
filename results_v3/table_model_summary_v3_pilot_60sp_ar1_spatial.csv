@@ -1,0 +1,2 @@
+run_label,n_species,n_sites,n_periods,cov_model,n_neighbors,n_batch,n_burn,n_thin,n_chains,elapsed_mins,waic,is_pilot
+v3_pilot_60sp_ar1_spatial,20,1247,5,exponential,5,225,2000,1,2,17.48820203145345,NA,TRUE
