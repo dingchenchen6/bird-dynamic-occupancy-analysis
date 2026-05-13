@@ -11,7 +11,9 @@ logs/
 logs_v2/
 logs_v3/
 logs_v4/
-*.rds
+# Large data files (>100MB) excluded; smaller files tracked individually
+# *.rds and *.csv are tracked if <100MB
+# See gitattributes for LFS if needed
 *.tif
 *.tiff
 *.gpkg

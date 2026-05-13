@@ -97,8 +97,15 @@ check_dharma_gate <- function(brms_fit, save_dir = NULL, stem = "dharma") {
     return(NULL)
   }
 
-  # 模拟残差
-  sim_res <- DHARMa::simulateResiduals(brms_fit, n = 250, plot = FALSE)
+  # 模拟残差（brms 无随机效应时 coef() 可能报错，用 tryCatch 保护）
+  sim_res <- tryCatch(
+    DHARMa::simulateResiduals(brms_fit, n = 250, plot = FALSE),
+    error = function(e) {
+      warning("[dharma_gate] simulateResiduals failed: ", e$message, call. = FALSE)
+      NULL
+    }
+  )
+  if (is.null(sim_res)) return(NULL)
 
   # 过离散检验
   od_test <- DHARMa::testDispersion(sim_res, plot = FALSE)

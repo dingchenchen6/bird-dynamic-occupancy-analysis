@@ -482,7 +482,6 @@ for (m in c("corrected_richness", "shannon", "trait_volume", "pd_prob")) {
 
   brms_prior <- c(
     prior(normal(0, 1), class = "b"),
-    prior(exponential(1), class = "sd"),
     prior(normal(0, 1), class = "Intercept")
   )
 
@@ -529,7 +528,11 @@ for (m in c("corrected_richness", "shannon", "trait_volume", "pd_prob")) {
 
 # ── 9. 保存 psi 抽取 ──────────────────────────────────────────────────
 # FIX #3: 添加维度断言，确保 psi_samples_thinned 保存时维度正确
-psi_thinned <- psi_samples[draw_idx, , , drop = FALSE]
+if (length(psi_dim) >= 4) {
+  psi_thinned <- psi_samples[draw_idx, , , , drop = FALSE]
+} else {
+  psi_thinned <- psi_samples[draw_idx, , , drop = FALSE]
+}
 psi_thinned_dim <- dim(psi_thinned)
 expected_dim <- if (length(psi_dim) >= 4) {
   c(length(draw_idx), n_sp, n_sites, n_periods)

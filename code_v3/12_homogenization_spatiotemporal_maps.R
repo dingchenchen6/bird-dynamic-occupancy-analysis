@@ -104,7 +104,7 @@ for (d in seq_len(n_draws_use)) {
     b <- rowSums(pres_t)       # 每个 site 的物种数
     denom <- outer(b, b, "+")
     # FIX #13: 裁剪到 [0,1]，防止浮点精度导致负值
-    sorensen <- pmax(0, pmin(1, 1 - 2 * a / denom))
+    sorensen <- as.matrix(pmax(0, pmin(1, 1 - 2 * a / denom)))
     diag(sorensen) <- 0
 
     sorensen_by_period[[paste0("d", d, "_P", t)]] <- sorensen

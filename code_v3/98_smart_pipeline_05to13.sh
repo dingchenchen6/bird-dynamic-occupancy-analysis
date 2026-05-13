@@ -66,7 +66,11 @@ run_r_stage() {
   fi
 
   local start_time=$(date +%s)
-  if "$RSCRIPT" "$script_path" > "$log_file" 2>&1; then
+  local exec_cmd="$RSCRIPT"
+  if [[ "$script" == *.sh ]]; then
+    exec_cmd="bash"
+  fi
+  if $exec_cmd "$script_path" > "$log_file" 2>&1; then
     local end_time=$(date +%s)
     local elapsed=$(( end_time - start_time ))
     local elapsed_min=$(( elapsed / 60 ))
