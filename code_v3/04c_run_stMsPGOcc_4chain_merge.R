@@ -1,5 +1,5 @@
 #!/usr/bin/env Rscript
-## 04_run_stMsPGOcc_main.R  —  v3 核心模型
+## 04c_run_stMsPGOcc_4chain_merge.R  —  v3 核心模型
 ##
 ## 关键升级：tMsPGOcc → stMsPGOcc（增加空间 NNGP 随机效应）
 ## 检测协变量修正：移除 log_observers（共线）、duration_min → has_duration
@@ -13,14 +13,25 @@ suppressPackageStartupMessages({
   library(spOccupancy); library(readr); library(dplyr); library(tidyr)
 })
 
-CODE_V3 <- Sys.getenv("V3_CODE_DIR",
-  file.path("~", "Documents", "New project", "bird_dynamic_occupancy_analysis", "code_v3"))
+CODE_V3 <- Sys.getenv("V3_CODE_DIR")
+if (CODE_V3 == "") {
+  if (dir.exists(file.path("~", "bird_dynamic_occupancy_analysis", "code_v3"))) {
+    CODE_V3 <- file.path("~", "bird_dynamic_occupancy_analysis", "code_v3")
+  } else {
+    CODE_V3 <- file.path("~", "Documents", "New project", "bird_dynamic_occupancy_analysis", "code_v3")
+  }
+}
 source(file.path(CODE_V3, "00_config.R"))
+# -- 04c override: 200 batch, 2000 burn --
+FULL_N_BATCH   <<- 200L
+FULL_N_BURN    <<- 2000L
+FULL_N_THIN    <<- 2L
+FULL_N_CHAINS  <<- 4L
 source(file.path(CODE_V3, "utils_paths.R"))
 source(file.path(CODE_V3, "utils_core.R"))
 P <- ensure_v3_dirs()
 
-log_time("04", "Starting stMsPGOcc model fit")
+log_time("04c", "Starting stMsPGOcc model fit")
 
 # ── 1. 加载数据 ──────────────────────────────────────────────────────
 # 优先加载带网格标签的 survey history
@@ -60,7 +71,7 @@ candidate_species <- survey$species
 n_sp <- length(candidate_species)
 
 # 加载候选物种（如有限制）
-MAX_N_SP <- as.integer(Sys.getenv("V3_MAX_SPECIES", "500"))
+MAX_N_SP <- as.integer(Sys.getenv("V3_MAX_SPECIES", "200"))
 candidate_all <- read_csv_safe(
   file.path(DIRS$v2_results, "table_dynamic_occupancy_candidate_species_all"))
 if (!is.null(candidate_all)) {
@@ -288,7 +299,7 @@ det_formula <- ~ log_events + log_duration + has_duration
 
 # ── 7. Pilot vs Full + Chain Parallelization ───────────────────────────
 is_pilot <- Sys.getenv("V3_PILOT", "0") == "1"
-run_label <- if (is_pilot) PILOT_LABEL else RUN_LABEL
+run_label <- paste0(RUN_LABEL, "_04c")
 
 n_batch  <- if (is_pilot) PILOT_N_BATCH  else FULL_N_BATCH
 n_burn   <- if (is_pilot) PILOT_N_BURN   else FULL_N_BURN
@@ -322,7 +333,7 @@ if (is_pilot) {
 }
 
 # 10km 网格站点数多，适当增加 factor 数量
-n_factors_use <- min(15, max(1, n_sp_pilot - 1))
+n_factors_use <- min(5, max(1, n_sp_pilot - 1))
 
 # ── 8. 先验和起始值 ────────────────────────────────────────────────
 # z init: observed in any replicate -> 1, else 0 (3D: species × sites × periods)
@@ -378,7 +389,7 @@ tuning <- list(
 )
 
 # ── 9. 运行 stMsPGOcc ──────────────────────────────────────────────
-message(sprintf("[04] Running stMsPGOcc: %s", run_label))
+message(sprintf("[04] Running tMsPGOcc: %s", run_label))
 message(sprintf("[04] MCMC: %d batch × 25, burn=%d, thin=%d, chains=%d",
                 n_batch, n_burn, n_thin, n_chains))
 message(sprintf("[04] Spatial: NNGP %d neighbors, %s covariance",
@@ -386,7 +397,7 @@ message(sprintf("[04] Spatial: NNGP %d neighbors, %s covariance",
 
 t_start <- Sys.time()
 
-fit <- stMsPGOcc(
+fit <- tMsPGOcc(
   occ.formula   = occ_formula,
   det.formula   = det_formula,
   data          = data_list,
@@ -398,7 +409,7 @@ fit <- stMsPGOcc(
   n.neighbors   = N_NEIGHBORS,
   n.factors     = n_factors_use,   # factor model for species correlations
   n.batch       = n_batch,
-  batch.length  = 25,
+  batch.length  = 50,
   accept.rate   = 0.43,
   n.omp.threads = n_omp,
   verbose       = TRUE,
@@ -415,9 +426,9 @@ message(sprintf("[04] Model fit completed in %.1f minutes", as.numeric(t_elapsed
 # ── 10. 保存模型（含 OOM 保护和保存验证）────────────────────────────────
 # 链并行模式：保存链专属文件（04b 会合并）
 if (!is.na(chain_id)) {
-  fit_path <- v3_file("derived", paste0("stMsPGOcc_fit_", run_label, "_chain", chain_id), "rds")
+  fit_path <- v3_file("derived", paste0("tMsPGOcc_fit_", run_label, "_chain", chain_id), "rds")
 } else {
-  fit_path <- v3_file("derived", paste0("stMsPGOcc_fit_", run_label), "rds")
+  fit_path <- v3_file("derived", paste0("tMsPGOcc_fit_", run_label), "rds")
 }
 
 # 先 GC 释放内存再保存
@@ -502,5 +513,5 @@ write_csv(tibble(
   is_pilot      = is_pilot
 ), v3_file("results", paste0("table_model_summary_", run_label)))
 
-log_time("04", sprintf("DONE: %s, WAIC=%.2f, %.0f min",
+log_time("04c", sprintf("DONE: %s, WAIC=%.2f, %.0f min",
                          run_label, waic_val, as.numeric(t_elapsed)))

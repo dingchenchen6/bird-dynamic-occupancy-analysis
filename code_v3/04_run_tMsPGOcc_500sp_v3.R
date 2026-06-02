@@ -62,7 +62,7 @@ n_sp <- length(candidate_species)
 # 加载候选物种（如有限制）
 MAX_N_SP <- as.integer(Sys.getenv("V3_MAX_SPECIES", "500"))
 candidate_all <- read_csv_safe(
-  file.path(DIRS$v2_results, "table_dynamic_occupancy_candidate_species_all"))
+  file.path(DIRS$v2_results, "table_dynamic_occupancy_candidate_species_500"))
 if (!is.null(candidate_all)) {
   candidate_species <- head(candidate_all$species, MAX_N_SP)
 } else {
@@ -378,7 +378,7 @@ tuning <- list(
 )
 
 # ── 9. 运行 stMsPGOcc ──────────────────────────────────────────────
-message(sprintf("[04] Running stMsPGOcc: %s", run_label))
+message(sprintf("[04] Running tMsPGOcc: %s", run_label))
 message(sprintf("[04] MCMC: %d batch × 25, burn=%d, thin=%d, chains=%d",
                 n_batch, n_burn, n_thin, n_chains))
 message(sprintf("[04] Spatial: NNGP %d neighbors, %s covariance",
@@ -386,17 +386,13 @@ message(sprintf("[04] Spatial: NNGP %d neighbors, %s covariance",
 
 t_start <- Sys.time()
 
-fit <- stMsPGOcc(
+fit <- tMsPGOcc(
   occ.formula   = occ_formula,
   det.formula   = det_formula,
   data          = data_list,
   inits         = inits,
   priors        = priors,
-  tuning        = tuning,
-  cov.model     = COV_MODEL,
-  NNGP          = TRUE,
-  n.neighbors   = N_NEIGHBORS,
-  n.factors     = n_factors_use,   # factor model for species correlations
+  n.factors     = n_factors_use,
   n.batch       = n_batch,
   batch.length  = 25,
   accept.rate   = 0.43,
@@ -415,9 +411,9 @@ message(sprintf("[04] Model fit completed in %.1f minutes", as.numeric(t_elapsed
 # ── 10. 保存模型（含 OOM 保护和保存验证）────────────────────────────────
 # 链并行模式：保存链专属文件（04b 会合并）
 if (!is.na(chain_id)) {
-  fit_path <- v3_file("derived", paste0("stMsPGOcc_fit_", run_label, "_chain", chain_id), "rds")
+  fit_path <- v3_file("derived", paste0("tMsPGOcc_fit_", run_label, "_chain", chain_id), "rds")
 } else {
-  fit_path <- v3_file("derived", paste0("stMsPGOcc_fit_", run_label), "rds")
+  fit_path <- v3_file("derived", paste0("tMsPGOcc_fit_", run_label), "rds")
 }
 
 # 先 GC 释放内存再保存

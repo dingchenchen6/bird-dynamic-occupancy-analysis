@@ -101,7 +101,7 @@ div_taxonomic <- function(psi, eps = 1e-12) {
 #' @param phylo 系统发育树（ape::phylo）
 #' @param tip_order 物种顺序（与 psi 对齐）
 #' @return list: pd_prob, mpd_prob
-div_phylogenetic <- function(psi, phylo, tip_order = NULL, eps = 1e-12) {
+div_phylogenetic <- function(psi, phylo, tip_order = NULL, eps = 1e-6) {
   if (is.null(phylo)) {
     return(list(pd_prob = NA_real_, mpd_prob = NA_real_))
   }
@@ -117,29 +117,63 @@ div_phylogenetic <- function(psi, phylo, tip_order = NULL, eps = 1e-12) {
   if (!is.null(tip_order)) {
     names(psi) <- tip_order
   }
-  present <- names(psi)[ok]
-
-  # 检查 tip 是否在树中
-  present <- intersect(present, phylo$tip.label)
-  if (length(present) < 2) {
+  psi_names <- names(psi)
+  if (is.null(psi_names)) {
     return(list(pd_prob = NA_real_, mpd_prob = NA_real_))
   }
 
-  # PD: 加权分支长度
-  pruned <- ape::drop.tip(phylo, setdiff(phylo$tip.label, present))
-  w <- psi[pruned$tip.label] / sum(psi[pruned$tip.label])
-  # picante::pd 需要样地 × 物种的 0/1 矩阵（行=样地，列=物种名）
-  samp <- data.frame(matrix(1, nrow = 1, ncol = length(pruned$tip.label)))
-  colnames(samp) <- pruned$tip.label
-  rownames(samp) <- "site1"
-  pd_raw <- picante::pd(samp, pruned, include.root = FALSE)$PD
-  pd_prob <- pd_raw * sum(psi[ok])  # 按总占有率缩放
+  # 检查 tip 是否在树中（尝试原始名和下划线替换两种格式）
+  present <- intersect(psi_names[ok], phylo$tip.label)
+  if (length(present) < 2) {
+    # 物种名可能含空格而树 tip 用下划线，尝试转换后匹配
+    psi_names_under <- gsub(" ", "_", psi_names)
+    present_under <- intersect(psi_names_under[ok], phylo$tip.label)
+    if (length(present_under) < 2) {
+      return(list(pd_prob = NA_real_, mpd_prob = NA_real_))
+    }
+    # 建立映射并更新 psi 名称为下划线格式
+    name_map <- setNames(psi_names, psi_names_under)
+    present <- name_map[present_under]
+    names(psi) <- psi_names_under
+  }
 
-  # MPD: 加权平均系统发育距离
+  # 剪枝到匹配物种
+  pruned <- ape::drop.tip(phylo, setdiff(phylo$tip.label, present))
+
+  # 重新排序 psi 以匹配剪枝后的树
+  psi_pruned <- psi[pruned$tip.label]
+  psi_pruned <- pmin(pmax(psi_pruned, 0), 1)
+
+  # ── 概率加权 Faith's PD（Reese-Tucker 2024 修订版）──
+  # PD = sum_{edge} edge_length * (1 - prod_{sp under edge}(1 - psi_sp))
+  if (requireNamespace("phangorn", quietly = TRUE)) {
+    edge_lengths <- pruned$edge.length
+    edge_descend <- phangorn::Descendants(pruned, pruned$edge[, 2], type = "tips")
+    contrib <- vapply(seq_along(edge_lengths), function(i) {
+      tips <- edge_descend[[i]]
+      if (length(tips) == 0) return(0)
+      1 - prod(1 - psi_pruned[tips])
+    }, numeric(1))
+    pd_prob <- sum(edge_lengths * contrib)
+  } else {
+    # fallback: 若 phangorn 不可用，退回到 picante（非概率加权）
+    samp <- data.frame(matrix(1, nrow = 1, ncol = length(pruned$tip.label)))
+    colnames(samp) <- pruned$tip.label
+    rownames(samp) <- "site1"
+    pd_raw <- picante::pd(samp, pruned, include.root = FALSE)$PD
+    pd_prob <- pd_raw * sum(psi_pruned)
+  }
+
+  # ── 概率加权 MPD ──
   cophen <- cophenetic.phylo(pruned)
+  w <- psi_pruned / sum(psi_pruned)
   w_mat <- outer(w, w)
   diag(w_mat) <- 0
-  mpd_prob <- sum(cophen * w_mat) / sum(w_mat)
+  if (sum(w_mat) > eps) {
+    mpd_prob <- sum(cophen * w_mat) / sum(w_mat)
+  } else {
+    mpd_prob <- NA_real_
+  }
 
   list(pd_prob = pd_prob, mpd_prob = mpd_prob)
 }
@@ -475,8 +509,13 @@ div_baselga <- function(psi_t1, psi_t2) {
   beta_sne <- if (!is.na(beta_sor) && !is.na(beta_sim)) beta_sor - beta_sim else NA_real_
 
   # 比例：周转占总 β 的百分比（裁剪到 [0,1]，防止数值误差）
-  prop_turnover <- if (!is.na(beta_sor) && beta_sor > 1e-10) {
-    min(1, max(0, beta_sim / beta_sor))
+  # FIX: 放宽阈值，beta_sor == 0 时设为 0（无变化 = 无周转）
+  prop_turnover <- if (!is.na(beta_sor) && denom_sor > 0) {
+    if (beta_sor > 0) {
+      min(1, max(0, beta_sim / beta_sor))
+    } else {
+      0  # beta_sor == 0 意味着两个时期完全相同
+    }
   } else NA_real_
 
   list(

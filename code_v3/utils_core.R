@@ -22,6 +22,10 @@
 #' @param probs 分位数概率
 #' @return tibble: mean, sd, q025, median, q975, rhat (如可用)
 summarise_post <- function(x, probs = c(0.025, 0.5, 0.975)) {
+  if (is.array(x) && length(dim(x)) == 3) {
+    d <- dim(x)
+    x <- matrix(x, nrow = d[1] * d[3], ncol = d[2])
+  }
   if (is.matrix(x) || is.array(x)) {
     # 矩阵：逐列汇总
     qs <- apply(x, 2, quantile, probs = probs, na.rm = TRUE)

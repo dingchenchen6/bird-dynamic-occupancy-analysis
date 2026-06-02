@@ -1,16 +1,21 @@
 data/
 results/
 results_v2/
-results_v3/
 results_v4/
 figures/
 figures_v2/
-figures_v3/
 figures_v4/
 logs/
 logs_v2/
 logs_v3/
 logs_v4/
+
+# v3 results and figures are tracked (all files <100MB)
+# v3 large model objects excluded below
+data/derived_v3/tMsPGOcc_fit_*.rds
+data/derived_v3/psi_samples_thinned_*.rds
+data/derived_v3/metric_arrays_*.rds
+data/derived_v3/metric_arrays_checkpoint_*.rds
 # Large data files (>100MB) excluded; smaller files tracked individually
 # *.rds and *.csv are tracked if <100MB
 # See gitattributes for LFS if needed

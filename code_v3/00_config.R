@@ -52,9 +52,9 @@ PILOT_N_THIN    <- 1L
 PILOT_N_CHAINS  <- 4L
 
 # Full（正式运行）
-FULL_N_BATCH   <- 400L
-FULL_N_BURN    <- 5000L
-FULL_N_THIN    <- 2L
+FULL_N_BATCH   <- 400L  # 500sp: 10000 iter (was 15000)
+FULL_N_BURN    <- 5000L  # 500sp: 50% of iter (was 8000)
+FULL_N_THIN    <- 25L  # 500sp: 200 draws/chain (was 70)
 FULL_N_CHAINS  <- 4L
 
 # 空间参数（stMsPGOcc 新增）
@@ -69,7 +69,7 @@ ESS_THRESHOLD   <- 200L
 
 # ── 后处理参数 ──────────────────────────────────────────────────────
 PSI_MAX_DRAWS    <- 400L        # psi 后验最大抽取数
-POST_DRAWS_USE   <- 300L        # 多样性计算使用 draws 数
+POST_DRAWS_USE   <- 200L        # 多样性计算使用 draws 数
 TREND_DRAWS      <- 400L        # 趋势计算 draws 数
 
 # ── brms 参数 ──────────────────────────────────────────────────────

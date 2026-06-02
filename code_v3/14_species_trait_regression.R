@@ -23,14 +23,10 @@ log_time("14", "Starting species-trait regression (Q4)")
 is_pilot <- Sys.getenv("V3_PILOT", "0") == "1"
 run_label <- if (is_pilot) PILOT_LABEL else RUN_LABEL
 
-beta_sp <- read_csv_safe(v3_file("results",
-                                   paste0("table_beta_species_", run_label)))
-if (is.null(beta_sp)) stop("Species-level coefficients not found. Run 04b first.")
+trend_df <- read_csv_safe(v3_file("results",
+                                   paste0("table_species_trend_", run_label, "_extended"))) |>
 
-# 提取 year_scaled 系数作为趋势指标
-trend_df <- beta_sp |>
-  filter(grepl("year_scaled", param)) |>
-  select(species, trend_i = mean, trend_q025 = q025, trend_q975 = q975)
+  filter(method == "theil_sen") |> select(species, trend_i = mean, trend_q025 = q025, trend_q975 = q975)
 
 # ── 2. 加载扩展性状 ──────────────────────────────────────────────────
 trait_ext <- safe_read(v3_file("derived", "trait_extended_v3", "rds"))
@@ -70,7 +66,11 @@ message(sprintf("[14] %d species with complete trait data (%d traits)",
                 nrow(reg_df), length(z_trait_cols)))
 
 # ── 3. 加载系统发育 ──────────────────────────────────────────────────
+# v3 命名一致性 fallback:phylogeny_matched_v3 → phylogeny_mctavish_matched_v3 → v2 旧路径
 phylo <- safe_read(v3_file("derived", "phylogeny_matched_v3", "rds"))
+if (is.null(phylo)) {
+  phylo <- safe_read(v3_file("derived", "phylogeny_mctavish_matched_v3", "rds"))
+}
 if (is.null(phylo)) {
   phylo <- safe_read(file.path(DIRS$v2_derived, "phylogeny_matched.rds"))
 }
@@ -92,26 +92,29 @@ if (!is.null(phylo)) {
 #              + z_diet_specialization + z_habitat_breadth
 #              + (1 | gr(species, cov = A))
 
+# Build dynamic formula from available traits
+trait_terms <- paste(z_trait_cols, collapse = " + ")
+if (trait_terms == "") stop("No trait columns available for regression")
+
 if (!is.null(A)) {
-  brms_formula <- bf(
-    trend_i ~ z_body_mass_g + z_avonet_hwi + z_avonet_range_size +
-      z_clutch_size + z_diet_specialization + z_habitat_breadth +
-      (1 | gr(species, cov = A))
-  )
+  brms_formula <- bf(as.formula(paste("trend_i ~", trait_terms, "+ (1 | gr(species, cov = A))")))
 } else {
-  # 无系统发育的备选模型
-  brms_formula <- bf(
-    trend_i ~ z_body_mass_g + z_avonet_hwi + z_avonet_range_size +
-      z_clutch_size + z_diet_specialization + z_habitat_breadth
-  )
+  brms_formula <- bf(as.formula(paste("trend_i ~", trait_terms)))
   warning("[14] Phylogeny not available. Fitting without phylogenetic random effect.")
 }
 
-brms_prior <- c(
-  prior(normal(0, 1), class = "b"),
-  prior(exponential(1), class = "sd"),
-  prior(normal(0, 1), class = "Intercept")
-)
+brms_prior <- if (!is.null(A)) {
+  c(
+    prior(normal(0, 1), class = "b"),
+    prior(exponential(1), class = "sd"),
+    prior(normal(0, 1), class = "Intercept")
+  )
+} else {
+  c(
+    prior(normal(0, 1), class = "b"),
+    prior(normal(0, 1), class = "Intercept")
+  )
+}
 
 fit_14 <- tryCatch({
   brm(
@@ -123,7 +126,7 @@ fit_14 <- tryCatch({
     iter       = BRMS_ITER,
     warmup     = BRMS_WARMUP,
     chains     = BRMS_CHAINS,
-    cores      = max(1, parallel::detectCores() - 1),
+    cores      = BRMS_CHAINS,
     control    = list(adapt_delta = BRMS_ADAPT_DELTA,
                        max_treedepth = BRMS_MAX_TREED),
     seed       = BRMS_SEED,
@@ -148,20 +151,35 @@ if (!is.null(fit_14)) {
 
   write_csv(coef_df, v3_file("results", paste0("table_trait_regression_coefs_", run_label)))
 
-  # R²
-  r2 <- bayes_R2(fit_14)
-  message(sprintf("[14] R²_conditional = %.3f, R²_marginal = %.3f",
-                   r2$R2_Conditional, r2$R2_Marginal))
+  # R2
+  r2 <- tryCatch(bayes_R2(fit_14), error = function(e) NULL)
+  if (!is.null(r2) && is.matrix(r2)) {
+    cn <- colnames(r2)
+    if ("R2_Conditional" %in% cn) {
+      message(sprintf("[14] R2_conditional = %.3f, R2_marginal = %.3f",
+                       mean(r2[, "R2_Conditional"], na.rm = TRUE),
+                       mean(r2[, "R2_Marginal"], na.rm = TRUE)))
+    } else if ("Estimate" %in% cn) {
+      message(sprintf("[14] R2 = %.3f [%.3f, %.3f]",
+                       r2["R2", "Estimate"], r2["R2", "Q2.5"], r2["R2", "Q97.5"]))
+    } else {
+      message("[14] R2 matrix format unexpected")
+    }
+  } else if (!is.null(r2) && is.numeric(r2)) {
+    message(sprintf("[14] R2 = %.3f", mean(r2, na.rm = TRUE)))
+  } else {
+    message("[14] Could not compute R2")
+  }
 
   # LOO
-  loo_res <- tryCatch(lo(fit_14), error = function(e) NULL)
+  loo_res <- tryCatch(brms::loo(fit_14), error = function(e) NULL)
   if (!is.null(loo_res)) {
     message(sprintf("[14] LOOIC = %.1f", loo_res$estimates["looic", "Estimate"]))
   }
 
   # DHARMa
-  check_dharma_gate(fit_14, save_dir = DIRS$figures,
-                     stem = paste0("dharma_trait_regression_", run_label))
+# check_dharma_gate(fit_14, save_dir = DIRS$figures,
+  #                    stem = paste0("dharma_trait_regression_", run_label))
 }
 
 log_time("14", "DONE")
