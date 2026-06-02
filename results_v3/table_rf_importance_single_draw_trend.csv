@@ -1,0 +1,11 @@
+variable,importance,group,label
+delta_t_mean,0.013914560518071419,climate_change,Mean temperature change
+delta_t_extreme,0.03150247440666768,climate_change,Extreme temperature change
+delta_forest,0.010494834903638164,landuse_change,Forest cover change
+delta_impervious,0.021948032540505664,landuse_change,Impervious surface change
+delta_natural,0.010936395710199217,landuse_change,Natural land cover change
+delta_hfi,0.009840111168204881,human_change,Human footprint change
+bio11,0.02257663333526558,baseline,Mean temperature (baseline)
+elev_mean,0.024384367073900386,baseline,Elevation (baseline)
+centroid_lon,0.1394435898489712,baseline,Longitude
+centroid_lat,0.023327197454065727,baseline,Latitude
